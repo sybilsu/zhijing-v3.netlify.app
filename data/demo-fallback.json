@@ -1,0 +1,44 @@
+{
+  "_note": "示範備援：當 analyze-image 的 AI 視覺辨識逾時/失敗時，前端載入此 analysis，仍會在前端對真實資料庫評分產生分類★池，確保 Demo 走得完。畫面標示「示範資料」。",
+  "analysis": {
+    "summary": "自然主義灌叢與草本混植，層次分明、四季有景，帶有通透的草原氛圍。",
+    "season_estimate": "秋",
+    "texture_tags": ["自然主義", "層次", "通透", "結構型"],
+    "dominant_colors": ["#c9954a", "#7db87d", "#9b7b58", "#b5926e"],
+    "identified": [
+      {
+        "id": "P1",
+        "common_name": "常綠灌叢",
+        "category": "灌木",
+        "form": "叢生直立",
+        "foliage": "革質橢圓披針形",
+        "height_estimate_m": [1, 2],
+        "spread_estimate_m": [1, 2],
+        "ornament": "春季花穗",
+        "confidence": 0.82
+      },
+      {
+        "id": "P2",
+        "common_name": "直立草本",
+        "category": "草本",
+        "form": "直立花序",
+        "foliage": "披針形互生",
+        "height_estimate_m": [0.4, 1],
+        "spread_estimate_m": [0.3, 0.6],
+        "ornament": "夏秋花穗",
+        "confidence": 0.74
+      },
+      {
+        "id": "P3",
+        "common_name": "低矮地被",
+        "category": "地被",
+        "form": "匍匐叢生",
+        "foliage": "卵形對生",
+        "height_estimate_m": [0.1, 0.3],
+        "spread_estimate_m": [0.3, 0.6],
+        "ornament": "觀葉",
+        "confidence": 0.68
+      }
+    ]
+  }
+}

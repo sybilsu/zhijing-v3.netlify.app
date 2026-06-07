@@ -1,0 +1,734 @@
+[
+  {
+    "﻿NO.": "01",
+    "Photo (植物圖)": "台灣馬醉木.jpg",
+    "Name (中文名/學名)": "台灣馬醉木 / Pieris taiwanensis Hayata",
+    "Role (角色)": "Structure",
+    "HEIGHT (高度)": "1-2m",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "革質橢圓披針形",
+    "FLW SEASON (花期)": "Spring (3-4月)",
+    "STRUCT INT (結構期)": "Year-round",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Part shade/Full sun",
+    "SOIL (土壤)": "Well-drained acidic",
+    "ZONE (耐寒)": "7-9",
+    "NOTES (備註)": "台灣特有種，海拔1800-3300m，白色壺形花穗",
+    "category": "灌木",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "02",
+    "Photo (植物圖)": "燈稱花.jpg",
+    "Name (中文名/學名)": "燈稱花 / Ilex asprella (Hook. & Arn.) Champ. ex Benth.",
+    "Role (角色)": "Structure",
+    "HEIGHT (高度)": "1-3m",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "卵形至披針橢圓形",
+    "FLW SEASON (花期)": "Winter-Spring (1-3月)",
+    "STRUCT INT (結構期)": "Fall-Winter (黑色核果)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "No",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "低海拔400-1000m，白色小花，黑色橢圓核果",
+    "category": "灌木",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": [
+      "黑"
+    ]
+  },
+  {
+    "﻿NO.": "03",
+    "Photo (植物圖)": "田代氏石斑木.jpg",
+    "Name (中文名/學名)": "田代氏石斑木 / Rhaphiolepis indica var. tashiroi Hayata",
+    "Role (角色)": "Structure",
+    "HEIGHT (高度)": "1-3m",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "革質長橢圓至披針形",
+    "FLW SEASON (花期)": "Spring (2-4月)",
+    "STRUCT INT (結構期)": "Year-round",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣特有變種，白色5瓣花，黑色果實，耐修剪",
+    "category": "灌木",
+    "plant_name": "田代氏石斑木",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": [
+      "黑"
+    ]
+  },
+  {
+    "﻿NO.": "04",
+    "Photo (植物圖)": "黃荊.jpg",
+    "Name (中文名/學名)": "黃荊 / Vitex negundo L.",
+    "Role (角色)": "Structure",
+    "HEIGHT (高度)": "2-5m",
+    "SPREAD (展幅)": "2-4m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "掌狀複葉，小葉3-5枚披針形",
+    "FLW SEASON (花期)": "Summer (7-9月)",
+    "STRUCT INT (結構期)": "Summer (花穗)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "No",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "6-9",
+    "NOTES (備註)": "落葉灌木/小喬木，淡紫色花序，全株具香氣，藥用植物",
+    "category": "灌木",
+    "flower_color": [
+      "紫"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "05",
+    "Photo (植物圖)": "高士拂澤蘭.jpg",
+    "Name (中文名/學名)": "高士拂澤蘭 / Eupatorium tashiroi Hayata",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "0.5-1.5m",
+    "SPREAD (展幅)": "0.5-1m",
+    "N/m² (株數)": "2",
+    "FOLIAGE (葉形)": "對生卵形至橢圓形，薄膜質，三出脈",
+    "FLW SEASON (花期)": "Fall-Winter (10-1月)",
+    "STRUCT INT (結構期)": "Fall (白色頭狀花序)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣特有種，白色頭狀花序，適合蝴蝶蜜源植物",
+    "category": "灌木",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "06",
+    "Photo (植物圖)": "杜虹花.jpg",
+    "Name (中文名/學名)": "杜虹花 / Callicarpa formosana Rolfe",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "1-3m",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "橢圓至卵狀橢圓形，被星狀毛",
+    "FLW SEASON (花期)": "Summer (6-8月)",
+    "STRUCT INT (結構期)": "Fall-Winter (紫色果實)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained/Moist",
+    "ZONE (耐寒)": "8-10",
+    "NOTES (備註)": "台灣原生種，淡粉紫色花，秋冬紫色漿果成串，觀果價值高",
+    "category": "灌木",
+    "flower_color": [
+      "粉",
+      "紫"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": [
+      "紫"
+    ]
+  },
+  {
+    "﻿NO.": "07",
+    "Photo (植物圖)": "桃金孃.jpg",
+    "Name (中文名/學名)": "桃金孃 / Rhodomyrtus tomentosa (Aiton) Hassk.",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "1-4m",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "對生革質橢圓卵形，三出脈，背面灰白密毛",
+    "FLW SEASON (花期)": "Spring-Summer (4-7月)",
+    "STRUCT INT (結構期)": "Summer-Fall (漿果)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained acidic",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "常綠灌木，桃紅色花5瓣，果實可食，低海拔酸性土指標",
+    "category": "灌木",
+    "flower_color": [
+      "粉",
+      "紅"
+    ],
+    "leaf_color": [
+      "灰",
+      "白",
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "08",
+    "Photo (植物圖)": "青葙.jpg",
+    "Name (中文名/學名)": "青葙 / Celosia argentea L.",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "0.4-1.5m",
+    "SPREAD (展幅)": "0.3-0.6m",
+    "N/m² (株數)": "4",
+    "FOLIAGE (葉形)": "披針形至線形，互生",
+    "FLW SEASON (花期)": "Summer-Fall (5-10月)",
+    "STRUCT INT (結構期)": "Summer-Fall (穗狀花序)",
+    "LONGEVITY (壽命)": "Annual",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "No",
+    "SELF-SOW (自播)": "High",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "一年生草本，銀白至粉紅穗狀花序，種子量大可自播",
+    "category": "草本",
+    "flower_color": [
+      "銀",
+      "白",
+      "粉",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "09",
+    "Photo (植物圖)": "麥門冬.jpg",
+    "Name (中文名/學名)": "麥門冬 / Ophiopogon japonicus (Thunb.) Ker Gawl.",
+    "Role (角色)": "Ground cover",
+    "HEIGHT (高度)": "0.2-0.4m",
+    "SPREAD (展幅)": "0.3-1m",
+    "N/m² (株數)": "9",
+    "FOLIAGE (葉形)": "線形草葉，革質，深綠色常綠",
+    "FLW SEASON (花期)": "Summer (6-8月)",
+    "STRUCT INT (結構期)": "Year-round (常綠葉)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Spreading",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Part shade/Shade",
+    "SOIL (土壤)": "Moist/Well-drained",
+    "ZONE (耐寒)": "6-10",
+    "NOTES (備註)": "常綠多年生地被，白至淡紫花穗，耐陰耐旱，根莖可藥用",
+    "category": "地被",
+    "flower_color": [
+      "白",
+      "紫"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "10",
+    "Photo (植物圖)": "台灣糯米條.jpg",
+    "Name (中文名/學名)": "台灣糯米條 / Abelia chinensis var. ionandra (Hayata) Masam.",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.5-2m",
+    "SPREAD (展幅)": "0.5-1.5m",
+    "N/m² (株數)": "2",
+    "FOLIAGE (葉形)": "卵形至長橢圓形，小葉全緣至淺齒緣",
+    "FLW SEASON (花期)": "Summer-Fall (7-10月)",
+    "STRUCT INT (結構期)": "Fall (紅色宿存萼片)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "8-10",
+    "NOTES (備註)": "台灣特有變種，白色喇叭狀花，粉紅宿存萼，夏秋長期開花",
+    "category": "灌木",
+    "name": "台灣糯米條",
+    "flower_color": [
+      "白",
+      "粉",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": [
+      "粉",
+      "紅"
+    ]
+  },
+  {
+    "﻿NO.": "11",
+    "Photo (植物圖)": "截葉胡枝子.jpg",
+    "Name (中文名/學名)": "截葉胡枝子 / Lespedeza cuneata (Dum.Cours.) G.Don",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.5-2m",
+    "SPREAD (展幅)": "0.3-0.8m",
+    "N/m² (株數)": "3",
+    "FOLIAGE (葉形)": "三出複葉，小葉楔形截頭線形",
+    "FLW SEASON (花期)": "Summer-Fall (8-10月)",
+    "STRUCT INT (結構期)": "Fall (種莢宿存)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "4-8",
+    "NOTES (備註)": "多年生草本/亞灌木，白至淡紫花，固氮植物，耐旱耐貧瘠",
+    "category": "草本",
+    "flower_color": [
+      "白",
+      "紫"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "12",
+    "Photo (植物圖)": "綬草.jpg",
+    "Name (中文名/學名)": "綬草 / Spiranthes sinensis (Pers.) Ames",
+    "Role (角色)": "Ground cover",
+    "HEIGHT (高度)": "0.1-0.4m",
+    "SPREAD (展幅)": "0.1-0.2m",
+    "N/m² (株數)": "16",
+    "FOLIAGE (葉形)": "線形基生葉，厚肉質",
+    "FLW SEASON (花期)": "Spring (3-5月)",
+    "STRUCT INT (結構期)": "Spring (螺旋粉紅花穗)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Moist/Well-drained",
+    "ZONE (耐寒)": "5-9",
+    "NOTES (備註)": "原生地生蘭，粉紅色花螺旋排列，俗稱盤龍參，常見於潮濕草地",
+    "category": "地被",
+    "flower_color": [
+      "粉",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "13",
+    "Photo (植物圖)": "水社野牡丹.jpg",
+    "Name (中文名/學名)": "水社野牡丹 / Melastoma kudoi Sasaki",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.3-0.5m",
+    "SPREAD (展幅)": "0.3-0.6m",
+    "N/m² (株數)": "4",
+    "FOLIAGE (葉形)": "對生橢圓卵形，5脈，被毛",
+    "FLW SEASON (花期)": "Summer (6-9月)",
+    "STRUCT INT (結構期)": "Summer (紫紅色花)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained acidic",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣特有稀有種，僅產日月潭一帶，國家紅皮書列冊，亞灌木",
+    "category": "灌木",
+    "flower_color": [
+      "紫",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "14",
+    "Photo (植物圖)": "台灣金絲桃.jpg",
+    "Name (中文名/學名)": "台灣金絲桃 / Hypericum formosanum Maxim.",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.3-1m",
+    "SPREAD (展幅)": "0.3-0.8m",
+    "N/m² (株數)": "3",
+    "FOLIAGE (葉形)": "對生橢圓卵形，具透明腺點",
+    "FLW SEASON (花期)": "Summer (6-8月)",
+    "STRUCT INT (結構期)": "Summer (黃色5瓣花)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained/Moist",
+    "ZONE (耐寒)": "8-10",
+    "NOTES (備註)": "台灣特有種，亞灌木，黃色花雄蕊多數，具藥用價值",
+    "category": "草本",
+    "flower_color": [
+      "黃"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "15",
+    "Photo (植物圖)": "田代氏黃芩.jpg",
+    "Name (中文名/學名)": "田代氏黃芩 / Scutellaria tashiroi Hayata",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.2-0.4m",
+    "SPREAD (展幅)": "0.2-0.4m",
+    "N/m² (株數)": "6",
+    "FOLIAGE (葉形)": "對生卵形，被毛，葉脈下凹",
+    "FLW SEASON (花期)": "Spring-Summer (4-7月)",
+    "STRUCT INT (結構期)": "Spring-Summer (藍紫色唇形花)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Part shade/Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣特有種，東部溪谷岩生環境，淡藍紫色長管唇形花",
+    "category": "草本",
+    "flower_color": [
+      "藍",
+      "紫"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "16",
+    "Photo (植物圖)": "鈴木草.jpg",
+    "Name (中文名/學名)": "鈴木草 / Suzukia shikikunensis Kudo",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.1-0.3m",
+    "SPREAD (展幅)": "0.2-0.5m",
+    "N/m² (株數)": "6",
+    "FOLIAGE (葉形)": "圓腎形至心形，葉緣鋸齒，被白色長毛",
+    "FLW SEASON (花期)": "Spring-Summer (4-7月)",
+    "STRUCT INT (結構期)": "Spring-Summer (輪繖花序)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Spreading",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Part shade",
+    "SOIL (土壤)": "Moist/Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣中東部特有，唇形科，稀有植物，亞熱帶灌叢底層",
+    "category": "草本",
+    "flower_color": [],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "17",
+    "Photo (植物圖)": "阿里山油菊.jpg",
+    "Name (中文名/學名)": "阿里山油菊 / Dendranthema arisanense (Hayata) Y.Ling & C.Shih",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "0.5-1m",
+    "SPREAD (展幅)": "0.3-0.6m",
+    "N/m² (株數)": "4",
+    "FOLIAGE (葉形)": "羽狀深裂，互生，灰綠色",
+    "FLW SEASON (花期)": "Fall-Winter (10-12月)",
+    "STRUCT INT (結構期)": "Fall (黃色頭狀花序)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "8-10",
+    "NOTES (備註)": "台灣特有種，阿里山1600-3200m，秋冬黃色菊花，重要景觀植物",
+    "category": "草本",
+    "flower_color": [
+      "黃"
+    ],
+    "leaf_color": [
+      "灰",
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "18",
+    "Photo (植物圖)": "密毛爵床.jpg",
+    "Name (中文名/學名)": "密毛爵床 / Justicia procumbens L. var. hirsuta Yamam.",
+    "Role (角色)": "Ground cover",
+    "HEIGHT (高度)": "0.1-0.3m",
+    "SPREAD (展幅)": "0.2-0.5m",
+    "N/m² (株數)": "9",
+    "FOLIAGE (葉形)": "橢圓至卵橢圓形，密被毛，對生",
+    "FLW SEASON (花期)": "Summer-Fall (7-10月)",
+    "STRUCT INT (結構期)": "Summer-Fall (粉紅穗狀花序)",
+    "LONGEVITY (壽命)": "Annual",
+    "SPREADING (蔓延)": "Spreading",
+    "PERSIST (持久)": "No",
+    "SELF-SOW (自播)": "High",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained/Moist",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣特有變種，一年生草本，低矮蔓生，粉紅色穗狀花序",
+    "category": "地被",
+    "flower_color": [
+      "粉",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "19",
+    "Photo (植物圖)": "絡石.jpg",
+    "Name (中文名/學名)": "絡石 / Trachelospermum jasminoides (Lindl.) Lem.",
+    "Role (角色)": "Ground cover",
+    "HEIGHT (高度)": "0.3-0.6m (地被)/3-6m (攀緣)",
+    "SPREAD (展幅)": "1-3m",
+    "N/m² (株數)": "2",
+    "FOLIAGE (葉形)": "對生橢圓至倒披針形，革質深綠",
+    "FLW SEASON (花期)": "Spring-Summer (4-7月)",
+    "STRUCT INT (結構期)": "Year-round (常綠)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Spreading",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade/Shade",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "7-10",
+    "NOTES (備註)": "常綠攀緣藤本，白色風車形芳香花，可作地被或攀緣，適應性強",
+    "category": "地被",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "20",
+    "Photo (植物圖)": "蠅翼草.jpg",
+    "Name (中文名/學名)": "蠅翼草 / Desmodium triflorum (L.) DC.",
+    "Role (角色)": "Ground cover",
+    "HEIGHT (高度)": "0.05-0.3m",
+    "SPREAD (展幅)": "0.3-1m",
+    "N/m² (株數)": "9",
+    "FOLIAGE (葉形)": "三出複葉，小葉倒心形，細小",
+    "FLW SEASON (花期)": "Summer-Fall (5-10月)",
+    "STRUCT INT (結構期)": "Summer-Fall (紫紅小花)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Running",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained/Moist",
+    "ZONE (耐寒)": "9-12",
+    "NOTES (備註)": "匍匐多年生草本，節處生根，紫紅色小蝶形花，固氮耐踐踏",
+    "category": "地被",
+    "name": "蠅翼草",
+    "flower_color": [
+      "紫",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "21",
+    "Photo (植物圖)": "野牡丹.jpg",
+    "Name (中文名/學名)": "野牡丹 / Melastoma candidum D.Don",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "1-3m",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "橢圓卵形，5-7脈，硬毛，紙質",
+    "FLW SEASON (花期)": "Summer (6-8月)",
+    "STRUCT INT (結構期)": "Summer-Fall (大型紫紅花/果)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained acidic",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "台灣低海拔常見灌木，大型紫紅5瓣花，酸性土指標，蜜源鳥食植物",
+    "category": "灌木",
+    "flower_color": [
+      "紫",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "22",
+    "Photo (植物圖)": "山月桃.jpg",
+    "Name (中文名/學名)": "山月桃 / Alpinia intermedia Gagnep.",
+    "Role (角色)": "Structure",
+    "HEIGHT (高度)": "1-1.5m",
+    "SPREAD (展幅)": "0.8-1.2m",
+    "N/m² (株數)": "2",
+    "FOLIAGE (葉形)": "長橢圓形30-50cm，深綠光澤",
+    "FLW SEASON (花期)": "Summer (6-8月)",
+    "STRUCT INT (結構期)": "Fall-Winter (紅色蒴果)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Spreading",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Part shade/Shade",
+    "SOIL (土壤)": "Moist",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "根莖型多年生，薑科，白色花穗，秋冬紅果，耐陰濕，適林緣下層",
+    "category": "草本",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": [
+      "紅"
+    ]
+  },
+  {
+    "﻿NO.": "23",
+    "Photo (植物圖)": "山素英.jpg",
+    "Name (中文名/學名)": "山素英 / Jasminum sinense Hemsl.",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "1-4m (攀緣)",
+    "SPREAD (展幅)": "1-2m",
+    "N/m² (株數)": "1",
+    "FOLIAGE (葉形)": "羽狀複葉，小葉3-7枚卵形，深綠",
+    "FLW SEASON (花期)": "Spring-Summer (3-7月)",
+    "STRUCT INT (結構期)": "Spring (白色星形花)",
+    "LONGEVITY (壽命)": "Shrub",
+    "SPREADING (蔓延)": "Spreading",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "9-11",
+    "NOTES (備註)": "常綠攀緣灌木，白色管狀星形芳香花，台灣低海拔至亞熱帶灌叢",
+    "category": "灌木",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "24",
+    "Photo (植物圖)": "紫苞舌蘭.jpg",
+    "Name (中文名/學名)": "紫苞舌蘭 / Spathoglottis plicata Blume",
+    "Role (角色)": "Primary",
+    "HEIGHT (高度)": "0.3-1m",
+    "SPREAD (展幅)": "0.3-0.5m",
+    "N/m² (株數)": "4",
+    "FOLIAGE (葉形)": "摺扇形長披針葉，叢生假球莖",
+    "FLW SEASON (花期)": "Spring-Summer (4-9月)",
+    "STRUCT INT (結構期)": "Spring-Summer (紫粉花穗)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Low",
+    "LIGHT (光照)": "Full sun/Part shade",
+    "SOIL (土壤)": "Moist/Well-drained",
+    "ZONE (耐寒)": "10-12",
+    "NOTES (備註)": "地生蘭，紫粉紅色花，花期長多次開花，台灣南部及離島低海拔",
+    "category": "草本",
+    "flower_color": [
+      "紫",
+      "粉",
+      "紅"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  },
+  {
+    "﻿NO.": "25",
+    "Photo (植物圖)": "毛胡枝子.jpg",
+    "Name (中文名/學名)": "毛胡枝子 / Lespedeza tomentosa (Thunb.) Siebold ex Maxim.",
+    "Role (角色)": "Filler",
+    "HEIGHT (高度)": "0.5-1m",
+    "SPREAD (展幅)": "0.3-0.6m",
+    "N/m² (株數)": "4",
+    "FOLIAGE (葉形)": "三出複葉，小葉橢圓形，密被白毛",
+    "FLW SEASON (花期)": "Summer-Fall (8-10月)",
+    "STRUCT INT (結構期)": "Fall (莢果宿存)",
+    "LONGEVITY (壽命)": "Perennial",
+    "SPREADING (蔓延)": "Clumping",
+    "PERSIST (持久)": "Yes",
+    "SELF-SOW (自播)": "Moderate",
+    "LIGHT (光照)": "Full sun",
+    "SOIL (土壤)": "Well-drained",
+    "ZONE (耐寒)": "5-8",
+    "NOTES (備註)": "多年生草本/亞灌木，白色蝶形花，全株密被白毛，固氮耐旱耐貧瘠",
+    "category": "草本",
+    "flower_color": [
+      "白"
+    ],
+    "leaf_color": [
+      "綠"
+    ],
+    "fruit_color": []
+  }
+]

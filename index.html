@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NativePlant AI — 台灣原生植物景觀設計助手</title>
+  <meta name="description" content="AI 輔助自然主義種植設計工具，為台灣中部原生植物生成景觀設計方案">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg-layer"></div>
+
+  <!-- Navigation -->
+  <nav class="nav glass-card">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>
+      <span style="font-family:var(--font-zh);text-transform:none">植徑</span> NativePlant AI
+    </div>
+    <div class="nav-links">
+      <a class="nav-link active" data-section="hero" href="#">首頁</a>
+      <a class="nav-link" data-section="upload-section" href="#">上傳分析</a>
+      <a class="nav-link" data-section="palette-section" href="#">植栽提案</a>
+      <a class="nav-link" data-section="matrix-section" href="#">矩陣計算</a>
+      <a class="nav-link" data-section="seasonal-section" href="#">季相預覽</a>
+      <a class="nav-link" data-section="export-section" href="#">匯出</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero" class="section active">
+    <div class="container" style="display:flex;align-items:center;justify-content:center;min-height:80vh">
+      <div class="hero-panel glass-card hero-cover">
+        <p class="hero-eyebrow">Taiwan Native · Naturalistic Planting</p>
+        <h1 class="hero-title hero-brand">植徑</h1>
+        <p class="hero-tagline">台灣原生 · 自然種植</p>
+        <button id="hero-cta" class="btn btn-primary btn-large">
+          開始設計
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 2 — UPLOAD
+  ═══════════════════════════════════════ -->
+  <section id="upload-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Step 01</p>
+        <h2 class="section-title">上傳參考圖<strong>提取設計特徵</strong></h2>
+      </div>
+
+      <div class="upload-grid">
+        <!-- Drop Zone -->
+        <div id="drop-zone" class="drop-zone">
+          <div id="upload-placeholder" class="upload-placeholder">
+            <div class="upload-icon">🌿</div>
+            <div class="upload-hint">
+              <strong>點擊或拖曳上傳</strong><br>
+              景觀參考圖<br>
+              <span style="font-size:0.78rem;color:var(--ink-4)">JPG / PNG，最大 10MB</span>
+            </div>
+          </div>
+          <div id="upload-preview" class="upload-preview">
+            <img id="preview-img" src="" alt="參考圖預覽">
+          </div>
+          <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp" style="display:none">
+        </div>
+
+        <!-- Site Conditions -->
+        <div class="site-panel glass-card">
+          <h3>基地環境條件</h3>
+
+          <div class="form-group">
+            <label class="form-label" for="site-light">日照條件</label>
+            <select id="site-light" class="form-control">
+              <option value="全日照">全日照（每日 6h+）</option>
+              <option value="半日照" selected>半日照（每日 3-6h）</option>
+              <option value="半遮蔭">半遮蔭（每日 1-3h）</option>
+              <option value="全遮蔭">全遮蔭</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="site-moisture">水分條件</label>
+            <select id="site-moisture" class="form-control">
+              <option value="乾燥">乾燥（旱地、排水良好）</option>
+              <option value="中等" selected>中等（適中濕潤）</option>
+              <option value="濕潤">濕潤（水邊、低窪）</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="site-altitude">海拔（公尺）</label>
+              <input id="site-altitude" type="number" class="form-control" value="200" min="0" max="4000">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="site-area">面積（㎡）</label>
+              <input id="site-area" type="number" class="form-control" value="100" min="1">
+            </div>
+          </div>
+
+          <button id="analyze-btn" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem" disabled>
+            開始分析
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 3 — EXTRACTION RESULT
+  ═══════════════════════════════════════ -->
+  <section id="extraction-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Step 02</p>
+        <h2 class="section-title">風格特徵萃取<strong>Style Extraction</strong></h2>
+      </div>
+
+      <div id="extraction-loading" class="loading-overlay glass-card" style="margin-bottom:1.5rem;border-radius:var(--radius-lg)">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">正在解析景觀設計特徵…</p>
+      </div>
+
+      <div class="extraction-grid">
+        <!-- Image with overlay -->
+        <div class="extracted-image-wrap glass-card">
+          <img id="extracted-image" src="" alt="分析圖片" style="display:block">
+          <div id="color-palette" class="color-palette-strip"></div>
+        </div>
+
+        <!-- DNA Results -->
+        <div class="dna-panel glass-card">
+          <div id="dna-result">
+            <!-- Populated by matching.js renderExtractionResult() -->
+          </div>
+        </div>
+      </div>
+
+      <div class="section-actions">
+        <button id="match-plants-btn" class="btn btn-primary" disabled>
+          生成植栽提案 →
+        </button>
+        <button id="back-to-upload" class="btn btn-ghost">
+          ← 重新上傳
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 4 — PLANT PALETTE
+  ═══════════════════════════════════════ -->
+  <section id="palette-section" class="section">
+    <div class="container-wide">
+      <div class="section-header">
+        <p class="section-eyebrow">Step 03</p>
+        <h2 class="section-title">台灣原生植物<strong>替代方案</strong></h2>
+      </div>
+
+      <div id="palette-loading" class="loading-overlay glass-card" style="margin-bottom:1.5rem;border-radius:var(--radius-lg)">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">正在語義匹配台灣原生植物…</p>
+      </div>
+
+      <div id="palette-tabs" class="palette-tabs"></div>
+
+      <div id="palette-results" class="glass-card" style="padding:1.5rem">
+        <!-- Populated by matching.js renderPalettes() -->
+        <p style="color:var(--ink-4);text-align:center;padding:2rem">請先完成圖片分析並點擊「生成植栽提案」</p>
+      </div>
+
+      <div class="section-actions">
+        <button id="to-matrix-btn" class="btn btn-primary">矩陣計算 →</button>
+        <button class="btn btn-ghost" onclick="document.getElementById('back-to-upload').click()">← 重新分析</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 5 — MATRIX CALCULATOR
+  ═══════════════════════════════════════ -->
+  <section id="matrix-section" class="section">
+    <div class="container-wide">
+      <div class="section-header">
+        <p class="section-eyebrow">Step 04</p>
+        <h2 class="section-title">動態矩陣計算<strong>植栽 BOQ</strong></h2>
+      </div>
+
+      <div class="matrix-controls glass-card">
+        <div class="form-group">
+          <label class="form-label">基地面積（㎡）</label>
+          <input id="matrix-area" type="number" class="form-control" value="100" min="1">
+        </div>
+        <div class="form-group">
+          <label class="form-label">苗木盆型</label>
+          <select id="matrix-pot" class="form-control">
+            <option value="3吋">3 吋盆（低密度試種）</option>
+            <option value="4吋">4 吋盆</option>
+            <option value="5吋" selected>5 吋盆（標準施工）</option>
+          </select>
+        </div>
+        <div class="matrix-stats">
+          <div class="stat-item">
+            <span id="total-qty" class="stat-value">—</span>
+            <span class="stat-label">總株數</span>
+          </div>
+          <div class="stat-item">
+            <span id="total-area" class="stat-value">—</span>
+            <span class="stat-label">施工面積</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="overflow:hidden">
+        <table class="boq-table">
+          <thead>
+            <tr>
+              <th>植物</th>
+              <th>角色</th>
+              <th>盆型</th>
+              <th>株距</th>
+              <th>區域面積</th>
+              <th>株數</th>
+              <th>設計對應</th>
+            </tr>
+          </thead>
+          <tbody id="boq-tbody">
+            <tr><td colspan="7" class="empty-row">請先完成植栽提案分析</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-actions">
+        <button id="matrix-to-seasonal-btn" class="btn btn-primary">四季時間軸 →</button>
+        <button id="to-export-btn" class="btn btn-ghost">匯出 Excel</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 6 — SEASONAL TIMELINE
+  ═══════════════════════════════════════ -->
+  <section id="seasonal-section" class="section">
+    <div class="container-wide">
+      <div class="section-header">
+        <p class="section-eyebrow">Step 05</p>
+        <h2 class="section-title">四季時間軸<strong>季相演替預覽</strong></h2>
+      </div>
+
+      <div class="winter-score-bar glass-card">
+        <span class="winter-score-label">冬季視覺結構保留率（70/30 結構原則）</span>
+        <span id="winter-score" style="font-family:var(--font-en);font-size:1.5rem;font-weight:500">—</span>
+        <span style="font-size:0.78rem;color:var(--ink-3)">（建議 ≥ 30%）</span>
+      </div>
+
+      <div id="seasonal-svg-container" class="glass-card" style="padding:1.5rem">
+        <p style="color:var(--ink-4);text-align:center;padding:2rem">請先完成植栽提案分析</p>
+      </div>
+
+      <div class="section-actions">
+        <button id="view-seasonal-btn" class="btn btn-ghost" style="display:none">重新載入</button>
+        <button id="to-export-btn-2" class="btn btn-primary" onclick="document.getElementById('to-export-btn').click()">前往匯出 →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 7 — EXPORT
+  ═══════════════════════════════════════ -->
+  <section id="export-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Step 06</p>
+        <h2 class="section-title">匯出<strong>設計文件</strong></h2>
+      </div>
+
+      <div class="export-cards">
+        <div class="export-card" id="export-excel-btn">
+          <div class="export-icon">📊</div>
+          <div class="export-label">Excel 植栽表</div>
+          <div class="export-desc">含 BOQ 數量表<br>植物屬性 × 基地條件</div>
+        </div>
+
+        <div class="export-card" id="save-project-btn">
+          <div class="export-icon">💾</div>
+          <div class="export-label">儲存專案</div>
+          <div class="export-desc">儲存至瀏覽器本地<br>下次開啟可繼續編輯</div>
+        </div>
+
+        <div class="export-card" onclick="window.print()">
+          <div class="export-icon">🖨</div>
+          <div class="export-label">列印頁面</div>
+          <div class="export-desc">直接列印目前畫面</div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;padding:1.25rem;border-radius:var(--radius-md);background:rgba(138,158,130,0.08);border:1px solid rgba(138,158,130,0.2)">
+        <p style="font-size:0.8rem;color:var(--ink-3);line-height:1.6">
+          AI 輔助：影像視覺分析 + 語義比對檢索
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admin trigger — fixed bottom right -->
+  <div style="position:fixed;bottom:1rem;right:1.5rem;z-index:200">
+    <span id="admin-trigger" style="font-size:0.62rem;color:rgba(0,0,0,0.22);cursor:pointer;letter-spacing:0.1em;user-select:none;font-family:'Inter',sans-serif">
+      v0.2
+    </span>
+  </div>
+
+  <!-- Admin Panel — RAG Ingestion -->
+  <div id="admin-panel" style="display:none;position:relative;z-index:1;padding:0 1.5rem 4rem">
+    <div style="max-width:640px;margin:0 auto">
+      <div class="glass-card" style="padding:2rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border)">
+          <div>
+            <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-3);font-family:'Inter',sans-serif;margin-bottom:0.3rem">ADMIN</div>
+            <div style="font-size:1rem;font-weight:400;color:var(--ink)">RAG 文件嵌入</div>
+          </div>
+          <span id="admin-close" style="cursor:pointer;font-size:0.75rem;color:var(--ink-3);letter-spacing:0.08em;font-family:'Inter',sans-serif">關閉 ✕</span>
+        </div>
+
+        <div style="margin-bottom:1.25rem">
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:0.5rem;font-family:'Inter',sans-serif">選擇檔案</label>
+          <div id="admin-drop-zone" style="border:2px dashed var(--border);border-radius:var(--radius-sm);padding:1.5rem;text-align:center;cursor:pointer;transition:0.2s ease;background:var(--gray-1)">
+            <div id="admin-drop-label" style="font-size:0.85rem;color:var(--ink-3)">拖拉檔案至此，或<span style="color:var(--ink);text-decoration:underline;margin-left:4px">點擊選擇</span><div style="font-size:0.72rem;margin-top:0.3rem;color:var(--ink-3)">支援 PDF · TXT · JPG · PNG</div></div>
+            <div id="admin-file-name" style="font-size:0.8rem;color:var(--ink-2);margin-top:0.5rem;display:none"></div>
+          </div>
+          <input type="file" id="admin-pdf-file" accept=".pdf,.txt,.jpg,.jpeg,.png" style="display:none">
+        </div>
+
+        <div style="margin-bottom:1.5rem">
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:0.5rem;font-family:'Inter',sans-serif">資料類型</label>
+          <select id="admin-source-type" style="width:100%;padding:9px 12px;border:1px solid var(--border);background:var(--white);font-family:var(--font-zh);font-size:0.85rem;outline:none;border-radius:var(--radius-sm)">
+            <option value="pdf">學術文件 / 書籍</option>
+            <option value="field_note">田野筆記</option>
+            <option value="plant_db">植物資料庫</option>
+          </select>
+        </div>
+
+        <button id="admin-upload-btn" class="btn btn-primary" style="width:100%" disabled>上傳並嵌入至向量資料庫</button>
+
+        <div id="admin-result" style="display:none;margin-top:1.25rem;padding:1rem;border-radius:var(--radius-sm);font-size:0.82rem;line-height:1.6;white-space:pre-wrap;border:1px solid var(--border);background:var(--gray-1)"></div>
+
+        <!-- Ingested file list -->
+        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem">
+            <label style="display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3);font-family:'Inter',sans-serif;margin:0">已上傳清單</label>
+            <button id="admin-refresh-btn" style="background:none;border:none;font-size:0.75rem;color:var(--ink-3);cursor:pointer;font-family:'Inter',sans-serif;letter-spacing:0.05em;padding:0">重新整理 ↻</button>
+          </div>
+          <div id="admin-file-list" style="font-size:0.8rem;color:var(--ink-3)">載入中…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SheetJS for Excel export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <!-- Admin panel logic -->
+  <script>
+    (function () {
+      const trigger = document.getElementById('admin-trigger');
+      const panel   = document.getElementById('admin-panel');
+      const closeBtn = document.getElementById('admin-close');
+      const fileInput  = document.getElementById('admin-pdf-file');
+      const dropZone   = document.getElementById('admin-drop-zone');
+      const dropLabel  = document.getElementById('admin-drop-label');
+      const fileName   = document.getElementById('admin-file-name');
+      const uploadBtn  = document.getElementById('admin-upload-btn');
+      const result     = document.getElementById('admin-result');
+
+      const ALLOWED_EXT = ['pdf', 'txt', 'jpg', 'jpeg', 'png'];
+      function extOf(name) { return name.split('.').pop().toLowerCase(); }
+      let selectedFile = null;
+
+      function setFile(file) {
+        if (!file) return;
+        if (!ALLOWED_EXT.includes(extOf(file.name))) {
+          fileName.textContent = `✗ 不支援的格式：${file.name}`;
+          fileName.style.display = 'block';
+          fileName.style.color = '#8a1a1a';
+          uploadBtn.disabled = true;
+          return;
+        }
+        if (file.size > 30 * 1024 * 1024) {
+          fileName.textContent = `✗ 檔案過大（${(file.size/1024/1024).toFixed(1)} MB）。上限 30 MB。`;
+          fileName.style.display = 'block';
+          fileName.style.color = '#8a1a1a';
+          uploadBtn.disabled = true;
+          return;
+        }
+        selectedFile = file;
+        const sizeLabel = file.size > 4*1024*1024
+          ? `📄 ${file.name}  (${(file.size/1024/1024).toFixed(1)} MB)  — 大檔案走 Storage 上傳`
+          : `📄 ${file.name}  (${(file.size/1024).toFixed(0)} KB)`;
+        fileName.textContent = sizeLabel;
+        fileName.style.display = 'block';
+        fileName.style.color = '';
+        dropLabel.style.display = 'none';
+        uploadBtn.disabled = false;
+      }
+
+      dropZone.addEventListener('click', () => fileInput.click());
+      fileInput.addEventListener('change', () => setFile(fileInput.files[0]));
+
+      dropZone.addEventListener('dragover', e => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'var(--ink)';
+        dropZone.style.background = 'var(--gray-2)';
+      });
+      dropZone.addEventListener('dragleave', () => {
+        dropZone.style.borderColor = 'var(--border)';
+        dropZone.style.background = 'var(--gray-1)';
+      });
+      dropZone.addEventListener('drop', e => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'var(--border)';
+        dropZone.style.background = 'var(--gray-1)';
+        setFile(e.dataTransfer.files[0]);
+      });
+
+      const fileList = document.getElementById('admin-file-list');
+      const refreshBtn = document.getElementById('admin-refresh-btn');
+
+      const TYPE_LABEL = { pdf: '學術文件', field_note: '田野筆記', plant_db: '植物資料庫', image: '圖片' };
+
+      async function loadFileList() {
+        fileList.textContent = '載入中…';
+        try {
+          const res = await fetch('/api/list-rag');
+          const data = await res.json();
+          if (!data.files || data.files.length === 0) {
+            fileList.textContent = '尚無已上傳檔案';
+            return;
+          }
+          fileList.innerHTML = data.files.map(f => {
+            const date = new Date(f.uploaded_at).toLocaleDateString('zh-TW');
+            const type = TYPE_LABEL[f.source_type] || f.source_type;
+            return `<div style="display:flex;justify-content:space-between;align-items:baseline;padding:0.45rem 0;border-bottom:1px solid var(--border)">
+              <span style="color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:55%">${f.source_file}</span>
+              <span style="color:var(--ink-3);font-size:0.72rem;white-space:nowrap;margin-left:0.5rem">${type} · ${f.chunks} chunks · ${date}</span>
+            </div>`;
+          }).join('');
+        } catch (err) {
+          fileList.textContent = `無法載入：${err.message}`;
+        }
+      }
+
+      refreshBtn.addEventListener('click', loadFileList);
+
+      trigger.addEventListener('dblclick', () => {
+        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+        if (panel.style.display === 'block') {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          loadFileList();
+        }
+      });
+      closeBtn.addEventListener('click', () => { panel.style.display = 'none'; });
+
+      uploadBtn.addEventListener('click', async () => {
+        const file = selectedFile;
+        if (!file) return;
+        uploadBtn.disabled = true;
+        uploadBtn.textContent = '處理中…';
+        result.style.display = 'block';
+        result.style.color = 'var(--ink-3)';
+        result.textContent = `正在讀取 ${file.name}（${(file.size/1024).toFixed(0)} KB）…`;
+
+        try {
+          const sourceType = document.getElementById('admin-source-type').value;
+          const ext = file.name.split('.').pop().toLowerCase();
+          let ingestBody;
+
+          if (ext === 'pdf') {
+            // PDF pipeline: client-side text extract → OCR fallback per page
+            result.textContent = '正在載入 PDF…';
+            const rawText = await processPdfClientSide(file, (cur, total) => {
+              result.textContent = `OCR 處理中：第 ${cur} / ${total} 頁…`;
+            });
+            result.textContent = '正在嵌入向量…';
+            ingestBody = { rawText, filename: file.name, sourceType };
+
+          } else if (file.size > 4 * 1024 * 1024) {
+            // Large non-PDF: upload to Supabase Storage first
+            result.textContent = `正在上傳至 Storage（${(file.size/1024/1024).toFixed(1)} MB）…`;
+            const urlRes = await fetch('/api/get-upload-url', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ filename: file.name }) });
+            const urlData = await urlRes.json();
+            if (!urlRes.ok) throw new Error(urlData.error || '無法取得上傳 URL');
+            await fetch(urlData.signedUrl, { method: 'PUT', body: file, headers: { 'Content-Type': file.type } });
+            result.textContent = '檔案已上傳，正在嵌入向量…';
+            ingestBody = { storagePath: urlData.storagePath, filename: file.name, sourceType };
+
+          } else {
+            // Small file: base64 direct
+            result.textContent = `正在讀取 ${file.name}…`;
+            const base64 = await new Promise((res, rej) => { const r = new FileReader(); r.onload = e => res(e.target.result.split(',')[1]); r.onerror = rej; r.readAsDataURL(file); });
+            result.textContent = '正在嵌入並上傳至 Supabase…';
+            ingestBody = { fileBase64: base64, filename: file.name, sourceType };
+          }
+
+          const resp = await fetch('/api/ingest-pdf', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(ingestBody)
+          });
+          const data = await resp.json();
+          if (resp.ok) {
+            result.style.color = '#2a5a2a';
+            result.textContent = `✓ 成功\n檔案：${data.filename}\nChunks：${data.chunks_stored} 筆\n頁數：${data.pages_estimated} 頁`;
+            loadFileList();
+          } else {
+            result.style.color = '#8a1a1a';
+            result.textContent = `✗ ${data.error}`;
+          }
+        } catch (err) {
+          result.style.color = '#8a1a1a';
+          result.textContent = `✗ ${err.message}`;
+        } finally {
+          uploadBtn.disabled = false;
+          uploadBtn.textContent = '上傳並嵌入至向量資料庫';
+        }
+      });
+    // PDF client-side processing: text extract → OCR fallback
+    async function processPdfClientSide(file, onProgress) {
+      const pdfjsLib = window['pdfjs-dist/build/pdf'];
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+      const arrayBuffer = await file.arrayBuffer();
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      const totalPages = pdf.numPages;
+      const pageTexts = [];
+
+      for (let i = 1; i <= totalPages; i++) {
+        const page = await pdf.getPage(i);
+
+        // Try text extraction first
+        const textContent = await page.getTextContent();
+        const pageText = textContent.items.map(it => it.str).join(' ').trim();
+
+        if (pageText.length > 30) {
+          pageTexts.push(pageText);
+        } else {
+          // Scanned page — render to canvas → OCR via GPT-4o
+          onProgress(i, totalPages);
+          const viewport = page.getViewport({ scale: 1.8 });
+          const canvas = document.createElement('canvas');
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+          const imageBase64 = canvas.toDataURL('image/jpeg', 0.85).split(',')[1];
+
+          const ocrRes = await fetch('/api/ocr-page', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ imageBase64 })
+          });
+          const ocrData = await ocrRes.json();
+          if (ocrData.text) pageTexts.push(ocrData.text);
+        }
+      }
+      return pageTexts.join('\n\n');
+    }
+
+    })();
+  </script>
+
+  <!-- Main app module -->
+  <script type="module" src="src/app.js"></script>
+
+</body>
+</html>

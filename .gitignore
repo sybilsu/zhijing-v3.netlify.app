@@ -1,0 +1,10 @@
+.env
+.env.local
+node_modules/
+.netlify/
+dist/
+*.log
+*.pdf
+.$*.bkp
+5b*.png
+5b*.jpg

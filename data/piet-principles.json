@@ -1,0 +1,102 @@
+[
+  {
+    "chunk_id": "p-001",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 1: The Nature of Naturalistic Planting",
+    "principle": "matrix planting",
+    "text_en": "The matrix plant provides the ground layer that unifies the planting. It should be a plant that tolerates competition, spreads reliably, and creates a consistent visual texture across the planting. Grasses are ideal matrix plants because of their ability to intermingle with other plants without overwhelming them.",
+    "text_zh": "基質植物提供統一整體種植的地被層。它應該是能夠耐受競爭、可靠蔓延，並在種植中創造一致視覺質感的植物。禾本科草類是理想的基質植物，因為它們能夠與其他植物交織而不壓制它們。",
+    "tags": ["matrix", "unity", "ground layer", "grasses"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-002",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 2: Plant Roles and Intermingling",
+    "principle": "primary structure plants",
+    "text_en": "Primary plants create the key visual structure of a planting. They appear in repeated groups throughout the design, providing rhythm and continuity. They should have clear seasonal interest — whether through flowers, seedheads, or winter structure — and be visible across the planting.",
+    "text_zh": "初級植物創造種植的關鍵視覺結構。它們在整個設計中以重複群組形式出現，提供節奏和連續性。它們應該在季節上具有清晰的觀賞價值——無論是通過花朵、種頭還是冬季結構——並在整個種植中清晰可見。",
+    "tags": ["primary", "structure", "rhythm", "continuity"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-003",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 3: Seasonal Progression",
+    "principle": "winter structure",
+    "text_en": "The winter garden is the most important season for Piet Oudolf. Plants that provide structure through their dead stems and seedheads after the first frosts are crucial. The best plantings maintain 70% of their visual interest through winter. Grasses and umbellifer seed heads are particularly valuable.",
+    "text_zh": "冬季花園是 Piet Oudolf 最重視的季節。初霜後通過枯莖和種頭提供結構的植物至關重要。最好的種植方案在整個冬季保持70%的視覺趣味性。禾本科草類和傘形科的種頭特別有價值。",
+    "tags": ["winter", "structure", "seedheads", "70-30 rule"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-004",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 4: Texture and Transparency",
+    "principle": "transparent plants",
+    "text_en": "Transparent plants are those with an airy, see-through quality — fine stems, small flowers on branching stems, or wispy grass flower heads. They create depth and layering in a planting, allowing views through to plants behind. Verbena bonariensis and Stipa gigantea are classic examples.",
+    "text_zh": "透明植物是指具有通透、透視質量的植物——細莖、分枝莖上的小花，或纖細的草類花頭。它們在種植中創造深度和層次，允許看穿到後面的植物。柳葉馬鞭草和大針茅是典型例子。",
+    "tags": ["transparent", "airy", "depth", "layering"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-005",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 5: Color in Planting Design",
+    "principle": "naturalistic color palette",
+    "text_en": "The naturalistic palette favors muted, complex colors — the purples, pinks, blues, and yellows found in meadows and prairies. Hot colors are used sparingly. The goal is to create a harmonious whole rather than individual color statements. Foliage colors, especially autumn tones, are as important as flower colors.",
+    "text_zh": "自然主義調色板偏愛柔和、複雜的色彩——草甸和草原中的紫色、粉色、藍色和黃色。暖色調謹慎使用。目標是創造和諧的整體，而不是單獨的色彩陳述。葉片顏色，尤其是秋季色調，與花色同等重要。",
+    "tags": ["color", "naturalistic", "muted", "autumn"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-006",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 6: The Dynamic Balance",
+    "principle": "CSR strategies",
+    "text_en": "Understanding plant strategies (Competitors, Stress-tolerators, Ruderals) is essential for creating stable communities. Plantings dominated by Competitors require constant management. Stress-tolerator species create the most stable and long-lasting communities. The art is in balancing these strategies.",
+    "text_zh": "了解植物策略（競爭者、抗逆境者、干擾適應者）對於創建穩定群落至關重要。以競爭者為主的種植需要持續管理。抗逆境物種創造最穩定、最持久的群落。藝術在於平衡這些策略。",
+    "tags": ["CSR", "stability", "competition", "community"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-007",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 7: Designing with Grasses",
+    "principle": "grass movement and light",
+    "text_en": "Grasses animate a planting through movement. The way they catch light — backlighting especially — is unparalleled. Fine-leaved grasses like Molinia, Stipa, and Deschampsia are particularly beautiful when backlit in late afternoon sun, their flower heads glowing with an almost luminous quality.",
+    "text_zh": "禾草通過移動使種植充滿生機。它們捕捉光線的方式——尤其是逆光——是無與倫比的。細葉禾草如莫利尼亞草、針茅和波波草在下午晚些時候的逆光中特別美麗，花頭幾乎散發出發光的品質。",
+    "tags": ["grasses", "movement", "light", "transparency"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-008",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 8: The Foliage Garden",
+    "principle": "foliage as design element",
+    "text_en": "Flowers are only part of a plant's contribution. Foliage provides the backdrop and the continuity. Bold, architectural leaves contrast with airy grass textures. The interplay of different leaf forms, sizes, and textures creates visual interest throughout the season, not just when plants are in flower.",
+    "text_zh": "花朵只是植物貢獻的一部分。葉片提供背景和連續性。粗獷、有建築感的葉片與通透的禾草質感形成對比。不同葉形、大小和質感的相互作用在整個季節創造視覺趣味，不僅限於植物開花時。",
+    "tags": ["foliage", "texture", "contrast", "architectural"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-009",
+    "source": "Planting: A New Perspective",
+    "chapter": "Chapter 9: Ecological Planting",
+    "principle": "biodiversity and habitat",
+    "text_en": "Naturalistic plantings provide habitat for insects, birds, and other wildlife. The selection of plants with ecological functions — pollen, nectar, seeds, nesting material — enriches both the aesthetic and the ecological value. This is not just garden design but a contribution to biodiversity.",
+    "text_zh": "自然主義種植為昆蟲、鳥類和其他野生動物提供棲息地。選擇具有生態功能的植物——花粉、花蜜、種子、築巢材料——豐富了美學和生態價值。這不僅僅是花園設計，更是對生物多樣性的貢獻。",
+    "tags": ["biodiversity", "habitat", "ecological", "wildlife"],
+    "embedding": null
+  },
+  {
+    "chunk_id": "p-010",
+    "source": "矩陣種植原理與植栽特性（摘要）",
+    "chapter": "矩陣種植配比原則",
+    "principle": "planting ratios",
+    "text_en": "Matrix planting ratios: Matrix plants 50% (ground layer, dense planting), Primary plants 30% (repeated structural groups), Dispersal plants 10% (single specimens scattered), Filler plants 10% (gap fillers). This creates a naturalistic, self-sustaining community.",
+    "text_zh": "矩陣種植配比原則：基質植物50%（地被層，密植）、初級植物30%（重複出現的結構群組）、散布植物10%（單株散點分布）、填充植物10%（填補空隙）。這創造了一個自然、自我維持的植物群落。",
+    "tags": ["ratios", "matrix", "primary", "dispersal", "filler"],
+    "embedding": null
+  }
+]
