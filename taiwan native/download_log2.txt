@@ -1,0 +1,699 @@
+  [ok]   葉-台灣馬醉木.jpg
+  [ok]   近-台灣馬醉木.jpg
+  [ok]   葉-燈稱花.jpg
+  [ok]   近-燈稱花.jpg
+  [ok]   葉-黃荊.jpg
+  [ok]   近-黃荊.jpg
+  [ok]   葉-高士拂澤蘭.jpg
+  [ok]   葉-杜虹花.jpg
+  [ok]   近-杜虹花.jpg
+  [ok]   葉-桃金孃.jpg
+  [ok]   近-桃金孃.jpg
+  [ok]   葉-青葙.jpg
+  [skip] 已存在: 近-青葙.jpg
+  [ok]   葉-麥門冬.jpg
+  [ok]   近-麥門冬.jpg
+  [ok]   葉-台灣糯米條.jpg
+  [ok]   近-台灣糯米條.jpg
+  [ok]   葉-截葉胡枝子.jpg
+  [ok]   近-截葉胡枝子.jpg
+  [skip] 已存在: 葉-綬草.jpg
+  [ok]   近-綬草.jpg
+  [ok]   葉-絡石.jpg
+  [skip] 已存在: 近-絡石.jpg
+  [ok]   葉-蠅翼草.jpg
+  [ok]   近-蠅翼草.jpg
+--- 進度 20/508，成功 25，失敗 0 ---
+  [ok]   葉-山月桃.jpg
+  [ok]   近-山月桃.jpg
+  [ok]   葉-紫苞舌蘭.jpg
+  [ok]   近-紫苞舌蘭.jpg
+  [skip] 已存在: 葉-草海桐.jpg
+  [ok]   近-草海桐.jpg
+  [ok]   葉-白水木.jpg
+  [ok]   近-白水木.jpg
+  [ok]   葉-黃槿.jpg
+  [ok]   近-黃槿.jpg
+  [skip] 已存在: 葉-林投.jpg
+  [ok]   近-林投.jpg
+  [ok]   葉-台灣欒樹.jpg
+  [ok]   近-台灣欒樹.jpg
+  [ok]   葉-九芎.jpg
+  [ok]   近-九芎.jpg
+  [ok]   葉-大葉山欖.jpg
+  [ok]   近-大葉山欖.jpg
+  [ok]   葉-樹杞.jpg
+  [ok]   近-樹杞.jpg
+  [ok]   葉-紅楠.jpg
+  [skip] 已存在: 近-紅楠.jpg
+  [ok]   葉-月橘.jpg
+  [ok]   近-月橘.jpg
+  [ok]   葉-山黃梔.jpg
+  [ok]   近-山黃梔.jpg
+  [skip] 已存在: 葉-苦藍盤.jpg
+  [ok]   近-苦藍盤.jpg
+  [ok]   葉-文珠蘭.jpg
+  [ok]   近-文珠蘭.jpg
+  [skip] 已存在: 葉-台灣山桂花.jpg
+  [ok]   近-台灣山桂花.jpg
+--- 進度 40/508，成功 57，失敗 0 ---
+  [skip] 已存在: 葉-山黃麻.jpg
+  [ok]   近-山黃麻.jpg
+  [ok]   葉-構樹.jpg
+  [ok]   近-構樹.jpg
+  [ok]   葉-茄苳.jpg
+  [ok]   近-茄苳.jpg
+  [ok]   葉-無患子.jpg
+  [skip] 已存在: 近-無患子.jpg
+  [ok]   葉-樟樹.jpg
+  [ok]   近-樟樹.jpg
+  [ok]   葉-七里香山豬肉.jpg
+  [ok]   近-七里香山豬肉.jpg
+  [ok]   葉-江某.jpg
+  [ok]   近-江某.jpg
+  [ok]   葉-楊梅.jpg
+  [skip] 已存在: 近-楊梅.jpg
+  [ok]   葉-相思樹.jpg
+  [ok]   近-相思樹.jpg
+  [ok]   葉-食茱萸.jpg
+  [ok]   近-食茱萸.jpg
+  [ok]   葉-白匏子.jpg
+  [ok]   近-白匏子.jpg
+  [skip] 已存在: 葉-野桐.jpg
+  [ok]   近-野桐.jpg
+  [ok]   葉-水黃皮.jpg
+  [ok]   近-水黃皮.jpg
+  [ok]   葉-大頭茶.jpg
+  [ok]   近-大頭茶.jpg
+  [ok]   葉-台灣山桐子.jpg
+  [ok]   近-台灣山桐子.jpg
+  [ok]   葉-山芙蓉.jpg
+  [ok]   近-山芙蓉.jpg
+  [skip] 已存在: 葉-木芙蓉.jpg
+  [ok]   近-木芙蓉.jpg
+  [ok]   葉-血桐.jpg
+  [ok]   近-血桐.jpg
+  [ok]   葉-台灣赤楠.jpg
+  [ok]   近-台灣赤楠.jpg
+--- 進度 60/508，成功 95，失敗 0 ---
+  [ok]   葉-牛奶榕.jpg
+  [ok]   近-牛奶榕.jpg
+  [ok]   葉-山豬枷.jpg
+  [ok]   近-山豬枷.jpg
+  [ok]   葉-台灣澤蘭.jpg
+  [ok]   葉-華八仙.jpg
+  [ok]   近-華八仙.jpg
+  [ok]   葉-水金京.jpg
+  [ok]   近-水金京.jpg
+  [ok]   葉-小葉桑.jpg
+  [skip] 已存在: 近-小葉桑.jpg
+  [skip] 已存在: 葉-台灣澤蘭.jpg
+  [ok]   葉-台灣野牡丹藤.jpg
+  [ok]   葉-山豬槮.jpg
+  [ok]   近-山豬槮.jpg
+  [ok]   葉-密花苧麻.jpg
+  [ok]   近-密花苧麻.jpg
+  [ok]   葉-山黃連.jpg
+  [ok]   近-山黃連.jpg
+  [ok]   葉-玉山假沙梨.jpg
+  [ok]   葉-紅子莢蒾.jpg
+  [ok]   葉-山桐子.jpg
+  [ok]   葉-阿里山忍冬.jpg
+  [ok]   近-阿里山忍冬.jpg
+  [ok]   葉-變葉莢蒾.jpg
+  [ok]   近-變葉莢蒾.jpg
+  [skip] 已存在: 葉-墨點总桃.jpg
+--- 進度 80/508，成功 122，失敗 0 ---
+  [ok]   葉-霧社木薹草.jpg
+  [ok]   近-霧社木薹草.jpg
+  [ok]   葉-台灣杜鵑.jpg
+  [ok]   葉-玉山杜鵑.jpg
+  [ok]   近-玉山杜鵑.jpg
+  [ok]   葉-南湖杜鵑.jpg
+  [ok]   近-南湖杜鵑.jpg
+  [ok]   葉-玉山箭竹.jpg
+  [ok]   近-玉山箭竹.jpg
+  [ok]   葉-玉山火絨草.jpg
+  [ok]   葉-華山松.jpg
+  [ok]   近-華山松.jpg
+  [ok]   葉-台灣鐵杉.jpg
+  [ok]   近-台灣鐵杉.jpg
+  [ok]   葉-台灣冷杉.jpg
+  [skip] 已存在: 近-台灣冷杉.jpg
+  [ok]   葉-玉山箭竹蕨.jpg
+  [ok]   葉-玉山佛甲草.jpg
+  [ok]   葉-台灣赤陽.jpg
+  [ok]   葉-青楓.jpg
+--- 進度 100/508，成功 142，失敗 0 ---
+  [ok]   葉-台灣紅榨楓.jpg
+  [ok]   近-台灣紅榨楓.jpg
+  [ok]   葉-台灣山毛栉.jpg
+  [ok]   近-台灣山毛栉.jpg
+  [ok]   葉-昆欄樹.jpg
+  [ok]   近-昆欄樹.jpg
+  [ok]   葉-紅檜.jpg
+  [ok]   近-紅檜.jpg
+  [ok]   葉-台灣扁柏.jpg
+  [ok]   近-台灣扁柏.jpg
+  [ok]   葉-雲杉.jpg
+  [ok]   近-雲杉.jpg
+  [ok]   葉-台灣二葉松.jpg
+  [ok]   近-台灣二葉松.jpg
+  [ok]   葉-台灣百合.jpg
+  [ok]   近-台灣百合.jpg
+  [ok]   葉-風藤.jpg
+  [ok]   近-風藤.jpg
+  [ok]   葉-台灣金線蓮.jpg
+  [ok]   近-台灣金線蓮.jpg
+  [skip] 已存在: 葉-台灣油點草.jpg
+  [ok]   近-台灣油點草.jpg
+  [ok]   葉-台灣秋海棠.jpg
+  [ok]   近-台灣秋海棠.jpg
+  [ok]   葉-水鴨腳秋海棠.jpg
+  [ok]   近-水鴨腳秋海棠.jpg
+  [ok]   葉-台灣山菊.jpg
+  [ok]   近-台灣山菊.jpg
+  [ok]   葉-台灣鳳仙花.jpg
+  [ok]   近-台灣鳳仙花.jpg
+  [ok]   葉-台灣何首烏.jpg
+  [ok]   葉-台灣黃精.jpg
+  [ok]   近-台灣黃精.jpg
+  [ok]   葉-台灣根節蘭.jpg
+  [ok]   近-台灣根節蘭.jpg
+  [ok]   葉-台灣鴨跖草.jpg
+  [ok]   近-台灣鴨跖草.jpg
+--- 進度 120/508，成功 179，失敗 0 ---
+  [ok]   葉-台灣藜.jpg
+  [ok]   葉-三脈紫菀.jpg
+  [ok]   近-三脈紫菀.jpg
+  [ok]   葉-高山沙參.jpg
+  [ok]   葉-玉山薄雪草.jpg
+  [ok]   葉-玉山當歸.jpg
+  [ok]   近-玉山當歸.jpg
+  [skip] 已存在: 葉-玉山飄拂草.jpg
+  [ok]   近-玉山飄拂草.jpg
+  [ok]   葉-高山唐松草.jpg
+  [ok]   近-高山唐松草.jpg
+  [ok]   葉-阿里山龍膽.jpg
+  [ok]   葉-阿里山榿木.jpg
+  [ok]   近-阿里山榿木.jpg
+  [ok]   葉-玉山沙參.jpg
+  [ok]   葉-台灣桫欏.jpg
+  [ok]   近-台灣桫欏.jpg
+  [skip] 已存在: 葉-台灣樹蕨.jpg
+  [ok]   近-台灣樹蕨.jpg
+  [ok]   葉-山蕨.jpg
+  [ok]   葉-觀音座蓮.jpg
+  [skip] 已存在: 近-觀音座蓮.jpg
+  [ok]   葉-台灣山蘇花.jpg
+  [ok]   近-台灣山蘇花.jpg
+  [ok]   葉-腎蕨.jpg
+  [ok]   近-腎蕨.jpg
+  [ok]   葉-台灣蘆蕨.jpg
+  [ok]   近-台灣蘆蕨.jpg
+  [ok]   葉-過溝菜蕨.jpg
+  [ok]   近-過溝菜蕨.jpg
+--- 進度 140/508，成功 209，失敗 0 ---
+  [ok]   葉-台灣金狗毛蕨.jpg
+  [ok]   近-台灣金狗毛蕨.jpg
+  [ok]   葉-台灣海金沙.jpg
+  [ok]   近-台灣海金沙.jpg
+  [ok]   葉-崖薑蕨.jpg
+  [ok]   近-崖薑蕨.jpg
+  [ok]   葉-台灣槲蕨.jpg
+  [ok]   葉-凹葉景天.jpg
+  [ok]   近-凹葉景天.jpg
+  [ok]   葉-高山芒.jpg
+  [ok]   近-高山芒.jpg
+  [ok]   葉-五節芒.jpg
+  [ok]   近-五節芒.jpg
+  [ok]   葉-台灣蘆竹.jpg
+  [ok]   近-台灣蘆竹.jpg
+  [ok]   葉-牆草.jpg
+  [ok]   近-牆草.jpg
+  [ok]   葉-台灣狼尾草.jpg
+  [ok]   近-台灣狼尾草.jpg
+  [skip] 已存在: 葉-台灣莞草.jpg
+  [ok]   近-台灣莞草.jpg
+  [ok]   葉-香附子.jpg
+  [ok]   近-香附子.jpg
+  [ok]   葉-野薤.jpg
+  [ok]   近-野薤.jpg
+--- 進度 160/508，成功 234，失敗 0 ---
+  [ok]   葉-台灣莎草.jpg
+  [ok]   近-台灣莎草.jpg
+  [ok]   葉-馬鞍藤.jpg
+  [ok]   近-馬鞍藤.jpg
+  [ok]   葉-血藤.jpg
+  [ok]   近-血藤.jpg
+  [ok]   葉-菊花木.jpg
+  [ok]   葉-無根藤.jpg
+  [ok]   近-無根藤.jpg
+  [ok]   葉-蛇藤.jpg
+  [ok]   葉-台灣油麻藤.jpg
+  [ok]   近-台灣油麻藤.jpg
+  [ok]   葉-山葡萄.jpg
+  [ok]   近-山葡萄.jpg
+  [ok]   葉-扛香藤.jpg
+  [skip] 已存在: 近-扛香藤.jpg
+  [ok]   葉-牛奶藤.jpg
+  [ok]   近-牛奶藤.jpg
+  [ok]   葉-拎壁龍.jpg
+  [ok]   近-拎壁龍.jpg
+  [ok]   葉-台灣山葛.jpg
+  [ok]   近-台灣山葛.jpg
+  [ok]   葉-脈葉素馨.jpg
+  [ok]   近-脈葉素馨.jpg
+  [ok]   葉-台灣懸鈎子.jpg
+  [ok]   近-台灣懸鈎子.jpg
+  [ok]   葉-高山懸鈎子.jpg
+  [ok]   近-高山懸鈎子.jpg
+  [ok]   葉-水社柳.jpg
+  [ok]   近-水社柳.jpg
+--- 進度 180/508，成功 264，失敗 0 ---
+  [ok]   葉-水柳.jpg
+  [ok]   近-水柳.jpg
+  [ok]   葉-水蓼.jpg
+  [ok]   近-水蓼.jpg
+  [ok]   葉-千屈菜.jpg
+  [ok]   近-千屈菜.jpg
+  [ok]   葉-台灣水龍.jpg
+  [ok]   近-台灣水龍.jpg
+  [skip] 已存在: 葉-水芹菜.jpg
+  [ok]   近-水芹菜.jpg
+  [ok]   葉-香蒲.jpg
+  [ok]   近-香蒲.jpg
+  [ok]   葉-水蕨.jpg
+  [ok]   近-水蕨.jpg
+  [ok]   葉-台灣水蓑衣.jpg
+  [ok]   近-台灣水蓑衣.jpg
+  [ok]   葉-華克拉莎.jpg
+  [ok]   近-華克拉莎.jpg
+  [ok]   葉-圓葉節節菜.jpg
+  [ok]   近-圓葉節節菜.jpg
+  [ok]   葉-青剛櫟.jpg
+  [ok]   近-青剛櫟.png
+  [ok]   葉-長尾栲.jpg
+  [ok]   近-長尾栲.jpg
+  [ok]   葉-玉山石楠.jpg
+  [ok]   葉-火刺木.jpg
+  [ok]   近-火刺木.jpg
+--- 進度 200/508，成功 291，失敗 0 ---
+  [ok]   葉-山桂花.jpg
+  [ok]   近-山桂花.jpg
+  [ok]   葉-台灣鵝掌柴.jpg
+  [ok]   近-台灣鵝掌柴.jpg
+  [ok]   葉-阿里山榆.jpg
+  [ok]   近-阿里山榆.jpg
+  [ok]   葉-墨點柧.jpg
+  [ok]   近-墨點柧.jpg
+  [ok]   葉-山胡椒.jpg
+  [ok]   近-山胡椒.jpg
+  [ok]   葉-牛樟.jpg
+  [ok]   近-牛樟.jpg
+  [ok]   葉-土肉桂.jpg
+  [ok]   葉-厚皮香.jpg
+  [ok]   近-厚皮香.jpg
+  [ok]   葉-柃木.jpg
+  [skip] 已存在: 近-柃木.jpg
+  [ok]   葉-小葉魚藤.jpg
+  [ok]   葉-台灣鐵線蓮.jpg
+  [ok]   近-台灣鐵線蓮.jpg
+  [ok]   葉-春不老.jpg
+--- 進度 220/508，成功 312，失敗 0 ---
+  [ok]   葉-大花咸豐草.jpg
+  [ok]   近-大花咸豐草.jpg
+  [ok]   葉-台灣黃鵪菜.jpg
+  [ok]   近-台灣黃鵪菜.jpg
+  [ok]   葉-台灣堇菜.jpg
+  [ok]   近-台灣堇菜.jpg
+  [ok]   葉-如意草.jpg
+  [ok]   近-如意草.jpg
+  [ok]   葉-紫花地丁.jpg
+  [ok]   近-紫花地丁.jpg
+  [ok]   葉-通泉草.jpg
+  [ok]   近-通泉草.jpg
+  [ok]   葉-瓜子金.jpg
+  [ok]   近-瓜子金.jpg
+  [ok]   葉-車前草.jpg
+  [skip] 已存在: 近-車前草.jpg
+  [ok]   葉-台灣天胡荽.jpg
+  [ok]   近-台灣天胡荽.jpg
+  [ok]   葉-台灣魚腥草.jpg
+  [ok]   近-台灣魚腥草.jpg
+  [ok]   葉-兔兒菜.jpg
+  [ok]   近-兔兒菜.jpg
+  [ok]   葉-昭和草.jpg
+  [ok]   近-昭和草.jpg
+  [ok]   葉-台灣冷水麻.jpg
+  [ok]   近-台灣冷水麻.jpg
+  [ok]   葉-台灣蛇莓.jpg
+  [skip] 已存在: 近-台灣蛇莓.jpg
+  [ok]   葉-台灣山酢漿草.jpg
+  [skip] 已存在: 近-台灣山酢漿草.jpg
+  [ok]   葉-山藍.jpg
+  [ok]   近-山藍.jpg
+--- 進度 240/508，成功 344，失敗 0 ---
+  [ok]   葉-枸杞.jpg
+  [ok]   近-枸杞.jpg
+  [ok]   葉-台灣水錦樹.jpg
+  [ok]   近-台灣水錦樹.jpg
+  [ok]   葉-水冬瓜.jpg
+  [ok]   近-水冬瓜.jpg
+  [ok]   葉-虎皮楠.jpg
+  [ok]   葉-紅毛饅頭果.jpg
+  [ok]   葉-紅果金粟蘭.jpg
+  [ok]   近-紅果金粟蘭.jpg
+  [ok]   葉-南投鵝掌藤.jpg
+  [ok]   近-南投鵝掌藤.jpg
+  [ok]   葉-鈍葉柿.jpg
+  [ok]   近-鈍葉柿.jpg
+  [ok]   葉-栓皮櫟.jpg
+  [ok]   近-栓皮櫟.jpg
+  [ok]   葉-栓皮櫧.jpg
+  [ok]   近-栓皮櫧.jpg
+  [ok]   葉-小梾木.jpg
+  [ok]   近-小梾木.jpg
+  [ok]   葉-土密樹.jpg
+--- 進度 260/508，成功 365，失敗 0 ---
+  [ok]   葉-猿尾藤.jpg
+  [ok]   近-猿尾藤.jpg
+  [ok]   葉-阿里山溲疏.jpg
+  [ok]   近-阿里山溲疏.jpg
+  [ok]   葉-母草.jpg
+  [ok]   近-母草.jpg
+  [ok]   葉-台灣穀精草.jpg
+  [ok]   近-台灣穀精草.jpg
+  [ok]   葉-管草.jpg
+  [ok]   近-管草.jpg
+  [skip] 已存在: 葉-台灣鼠尾粟.jpg
+  [ok]   近-台灣鼠尾粟.jpg
+  [ok]   葉-扭鞘香茅.jpg
+  [ok]   近-扭鞘香茅.jpg
+  [ok]   葉-白茅.jpg
+  [ok]   近-白茅.jpg
+  [skip] 已存在: 葉-台灣狗尾草.jpg
+  [ok]   近-台灣狗尾草.jpg
+  [ok]   葉-台灣蘄艾.jpg
+  [ok]   近-台灣蘄艾.jpg
+  [ok]   葉-濱排草.jpg
+  [ok]   近-濱排草.jpg
+  [ok]   葉-盒果藤.jpg
+  [ok]   近-盒果藤.jpg
+  [skip] 已存在: 葉-草海桐.jpg
+  [skip] 已存在: 近-草海桐.jpg
+  [skip] 已存在: 葉-台灣海棗.jpg
+  [ok]   近-台灣海棗.jpg
+  [ok]   葉-台灣油杉.jpg
+  [ok]   近-台灣油杉.jpg
+  [ok]   葉-三斗石櫟.jpg
+  [ok]   近-三斗石櫟.jpg
+--- 進度 280/508，成功 397，失敗 0 ---
+  [ok]   葉-欖仁樹.jpg
+  [ok]   近-欖仁樹.jpg
+  [ok]   葉-台灣一葉蘭.jpg
+  [ok]   近-台灣一葉蘭.jpg
+  [skip] 已存在: 葉-紅花石斛.jpg
+  [ok]   近-紅花石斛.jpg
+  [ok]   葉-阿里山根節蘭.jpg
+  [ok]   近-阿里山根節蘭.jpg
+  [ok]   葉-台灣杜松.jpg
+  [ok]   葉-巒大花楸.jpg
+  [ok]   近-巒大花楸.jpg
+  [ok]   葉-豆梨.jpg
+  [ok]   近-豆梨.jpg
+  [ok]   葉-西施杜鵑.jpg
+  [ok]   近-西施杜鵑.jpg
+  [ok]   葉-栗葉懸鈎子.jpg
+  [ok]   近-栗葉懸鈎子.jpg
+--- 進度 300/508，成功 414，失敗 0 ---
+  [ok]   葉-台灣牽牛.jpg
+  [ok]   近-台灣牽牛.jpg
+  [ok]   葉-小本山葡萄.jpg
+  [ok]   近-小本山葡萄.jpg
+  [ok]   葉-菝契.jpg
+  [ok]   近-菝契.jpg
+  [skip] 已存在: 葉-菝契.jpg
+  [ok]   葉-雙面刺.jpg
+  [ok]   近-雙面刺.jpg
+  [ok]   葉-茅莓.jpg
+  [ok]   近-茅莓.jpg
+  [ok]   葉-曲莖馬藍.jpg
+  [ok]   近-曲莖馬藍.jpg
+  [ok]   葉-台灣鳳尾蕨.jpg
+  [ok]   葉-傅氏鳳尾蕨.jpg
+  [ok]   近-傅氏鳳尾蕨.jpg
+  [ok]   葉-扇葉鐵線蕨.jpg
+  [ok]   近-扇葉鐵線蕨.jpg
+  [ok]   葉-台灣鐵線蕨.jpg
+  [ok]   近-台灣鐵線蕨.jpg
+  [ok]   葉-書帶蕨.jpg
+  [ok]   近-書帶蕨.jpg
+  [ok]   葉-卷柏.jpg
+  [skip] 已存在: 近-卷柏.jpg
+  [ok]   葉-栗蕨.jpg
+  [ok]   近-栗蕨.jpg
+--- 進度 320/508，成功 440，失敗 0 ---
+  [ok]   葉-團扇蕨.jpg
+  [ok]   近-團扇蕨.jpg
+  [skip] 已存在: 葉-姑婆芋.jpg
+  [skip] 已存在: 近-姑婆芋.jpg
+  [ok]   葉-半邊蓮.jpg
+  [ok]   近-半邊蓮.jpg
+  [ok]   葉-田旋花.jpg
+  [ok]   近-田旋花.jpg
+  [skip] 已存在: 葉-碎米莎草.jpg
+  [ok]   近-碎米莎草.jpg
+  [ok]   葉-鼠麴草.jpg
+  [ok]   近-鼠麴草.jpg
+  [ok]   葉-冷清草.jpg
+  [skip] 已存在: 葉-台灣秋海棠.jpg
+  [skip] 已存在: 近-台灣秋海棠.jpg
+  [ok]   葉-台灣肖楠.jpg
+  [ok]   近-台灣肖楠.jpg
+  [ok]   葉-台灣五葉松.jpg
+  [ok]   近-台灣五葉松.jpg
+  [ok]   葉-桃實百日青.jpg
+  [ok]   近-桃實百日青.jpg
+  [skip] 已存在: 葉-竹柏.jpg
+  [skip] 已存在: 葉-三葉五加.jpg
+  [ok]   近-三葉五加.jpg
+  [ok]   葉-通脫木.jpg
+  [ok]   近-通脫木.jpg
+  [ok]   葉-申跋.jpg
+  [ok]   近-申跋.jpg
+  [ok]   葉-大葉仙茅.jpg
+  [ok]   近-大葉仙茅.jpg
+  [ok]   葉-毬蘭.jpg
+  [ok]   近-毬蘭.jpg
+--- 進度 340/508，成功 472，失敗 0 ---
+  [ok]   葉-台灣八角金盤.jpg
+  [ok]   近-台灣八角金盤.jpg
+  [ok]   葉-雀梅藤.jpg
+  [ok]   近-雀梅藤.jpg
+  [ok]   葉-紅紫珠.jpg
+  [ok]   近-紅紫珠.jpg
+  [ok]   葉-呂宋莢迷.jpg
+  [ok]   近-呂宋莢迷.jpg
+  [ok]   葉-福氏粗葉木.jpg
+  [ok]   近-福氏粗葉木.jpg
+  [ok]   葉-台灣山桑子.jpg
+  [ok]   近-台灣山桑子.jpg
+  [ok]   葉-角齒紫金牛.jpg
+  [ok]   近-角齒紫金牛.jpg
+  [skip] 已存在: 葉-紫金牛.jpg
+  [ok]   近-紫金牛.jpg
+  [ok]   葉-硃砂根.jpg
+  [ok]   近-硃砂根.jpg
+  [ok]   葉-厚葉石斑木.jpg
+  [ok]   近-厚葉石斑木.jpg
+  [ok]   葉-斑紋榕.jpg
+  [ok]   近-斑紋榕.jpg
+  [ok]   葉-糙葉榕.jpg
+  [ok]   近-糙葉榕.jpg
+  [skip] 已存在: 葉-雀榕.jpg
+  [ok]   近-雀榕.jpg
+--- 進度 360/508，成功 498，失敗 0 ---
+  [ok]   葉-大葉雀榕.jpg
+  [ok]   近-大葉雀榕.jpg
+  [ok]   葉-千里光.jpg
+  [ok]   近-千里光.jpg
+  [ok]   葉-玉山抱莖籟簫.jpg
+  [ok]   葉-玉山卷耳.jpg
+  [ok]   近-玉山卷耳.jpg
+  [ok]   葉-台灣佛甲草.jpg
+  [skip] 已存在: 近-台灣佛甲草.jpg
+  [ok]   葉-玉山地楊梅.jpg
+  [ok]   葉-台灣愛玉子.jpg
+  [ok]   近-台灣愛玉子.jpg
+  [ok]   葉-山棕.jpg
+  [ok]   近-山棕.jpg
+  [ok]   葉-月桃.jpg
+  [ok]   近-月桃.jpg
+  [ok]   葉-小金梅草.jpg
+  [ok]   近-小金梅草.jpg
+  [skip] 已存在: 葉-刺莧.jpg
+  [ok]   近-刺莧.jpg
+  [ok]   葉-台灣山藥.jpg
+  [ok]   近-台灣山藥.jpg
+  [ok]   葉-黃藥.jpg
+  [ok]   近-黃藥.jpg
+  [ok]   葉-台灣萱草.jpg
+  [ok]   近-台灣萱草.jpg
+--- 進度 380/508，成功 524，失敗 0 ---
+  [ok]   葉-高山韭.jpg
+  [ok]   近-高山韭.jpg
+  [ok]   葉-雀舌黃梔.jpg
+  [ok]   近-雀舌黃梔.jpg
+  [ok]   葉-黃刺懸鉤子.jpg
+  [ok]   近-黃刺懸鉤子.jpg
+  [ok]   葉-茄冬.jpg
+  [ok]   近-茄冬.jpg
+  [ok]   葉-野茉莉.jpg
+  [ok]   近-野茉莉.jpg
+  [ok]   葉-小蜡樹.jpg
+  [ok]   近-小蜡樹.jpg
+  [ok]   葉-米碎柃木.jpg
+  [ok]   葉-六月雪.jpg
+  [ok]   近-六月雪.jpg
+--- 進度 400/508，成功 539，失敗 0 ---
+  [ok]   葉-烏皮九芎.jpg
+  [ok]   近-烏皮九芎.jpg
+  [ok]   葉-稜果榕.jpg
+  [ok]   近-稜果榕.jpg
+  [ok]   葉-短柱山茶.jpg
+  [ok]   近-短柱山茶.jpg
+  [ok]   葉-錐果饅頭果.jpg
+  [ok]   近-錐果饅頭果.jpg
+  [ok]   葉-卵形莎草.jpg
+  [ok]   近-卵形莎草.jpg
+  [ok]   葉-鞘穎鴨嘴草.jpg
+  [ok]   近-鞘穎鴨嘴草.jpg
+  [ok]   葉-濱刀豆.jpg
+  [skip] 已存在: 近-濱刀豆.jpg
+  [ok]   葉-濱當歸.jpg
+  [ok]   近-濱當歸.jpg
+  [ok]   葉-細葉剪刀股.jpg
+  [ok]   近-細葉剪刀股.jpg
+  [skip] 已存在: 葉-鵲腎樹.jpg
+  [ok]   近-鵲腎樹.jpg
+  [ok]   葉-山柚.jpg
+  [ok]   近-山柚.jpg
+  [ok]   葉-台灣三角楓.jpg
+  [ok]   近-台灣三角楓.jpg
+  [ok]   葉-青莢葉.jpg
+  [ok]   近-青莢葉.jpg
+--- 進度 420/508，成功 565，失敗 0 ---
+  [skip] 已存在: 葉-小葉玉葉金花.jpg
+  [skip] 已存在: 近-小葉玉葉金花.jpg
+  [ok]   葉-玉葉金花.jpg
+  [ok]   近-玉葉金花.jpg
+  [ok]   葉-客人抹草.jpg
+  [ok]   葉-雞屎藤.jpg
+  [ok]   近-雞屎藤.jpg
+  [ok]   葉-台灣鵝耳檪.jpg
+  [ok]   近-台灣鵝耳檪.jpg
+  [ok]   葉-華山礬.jpg
+  [ok]   近-華山礬.jpg
+  [ok]   葉-烏來玉蘭.jpg
+  [ok]   葉-烏心石.jpg
+  [ok]   近-烏心石.jpg
+  [skip] 已存在: 葉-山桂花.jpg
+  [skip] 已存在: 近-山桂花.jpg
+  [ok]   葉-山櫻花.jpg
+  [ok]   近-山櫻花.jpg
+  [ok]   葉-阿里山櫻花.jpg
+  [ok]   近-阿里山櫻花.jpg
+  [skip] 已存在: 葉-墨點櫻桃.jpg
+  [ok]   葉-阿里山千金榆.jpg
+  [ok]   近-阿里山千金榆.jpg
+  [ok]   葉-黃肉樟.jpg
+  [ok]   近-黃肉樟.jpg
+  [ok]   葉-小葉赤楠.jpg
+  [ok]   近-小葉赤楠.jpg
+--- 進度 440/508，成功 592，失敗 0 ---
+  [ok]   葉-黃楊.jpg
+  [ok]   葉-鐵色.jpg
+  [skip] 已存在: 葉-台灣紅榨楓.jpg
+  [ok]   葉-尖葉槁樹.jpg
+  [ok]   近-尖葉槁樹.jpg
+  [ok]   葉-山香圓.jpg
+  [ok]   近-山香圓.jpg
+  [ok]   葉-野鴨椿.jpg
+  [ok]   近-野鴨椿.jpg
+  [ok]   葉-阿里山十大功勞.jpg
+  [ok]   近-阿里山十大功勞.jpg
+  [ok]   葉-玉山小檗.jpg
+  [ok]   近-玉山小檗.jpg
+  [ok]   葉-黃毛柳.jpg
+  [ok]   近-黃毛柳.jpg
+  [ok]   葉-紅毛杜鵑.jpg
+  [ok]   近-紅毛杜鵑.jpg
+  [skip] 已存在: 葉-西施花.jpg
+  [ok]   葉-紅星杜鵑.jpg
+  [ok]   葉-金毛杜鵑.jpg
+  [ok]   近-金毛杜鵑.jpg
+  [ok]   葉-海埔姜.jpg
+  [ok]   近-海埔姜.jpg
+  [ok]   葉-海芙蓉.jpg
+  [ok]   近-海芙蓉.jpg
+  [ok]   葉-水筆仔.jpg
+  [ok]   近-水筆仔.jpg
+--- 進度 460/508，成功 619，失敗 0 ---
+  [ok]   葉-海茄苳.jpg
+  [skip] 已存在: 近-海茄苳.jpg
+  [ok]   葉-苦林盤.jpg
+  [skip] 已存在: 葉-海州常山.jpg
+  [ok]   近-海州常山.jpg
+  [skip] 已存在: 葉-大青.jpg
+  [ok]   近-大青.jpg
+  [ok]   葉-角桐草.jpg
+  [ok]   近-角桐草.jpg
+  [ok]   葉-玉山金梅.jpg
+  [ok]   近-玉山金梅.jpg
+  [ok]   葉-一枝黃花.jpg
+  [ok]   近-一枝黃花.jpg
+  [ok]   葉-葡萄葉銀蓮花.jpg
+  [ok]   近-葡萄葉銀蓮花.jpg
+  [ok]   葉-高山百合.jpg
+  [ok]   近-高山百合.jpg
+  [skip] 已存在: 葉-水晶蘭.jpg
+  [ok]   近-水晶蘭.jpg
+  [ok]   葉-島榕.jpg
+  [ok]   近-島榕.jpg
+  [ok]   葉-虎杖.jpg
+  [ok]   近-虎杖.jpg
+  [ok]   葉-紫花鳳仙花.jpg
+  [ok]   葉-假樓梯草.jpg
+  [ok]   近-假樓梯草.jpg
+  [ok]   葉-地膽草.jpg
+  [ok]   近-地膽草.jpg
+--- 進度 480/508，成功 647，失敗 0 ---
+  [ok]   葉-金午時花.jpg
+  [ok]   近-金午時花.jpg
+  [ok]   葉-鷗蔓.jpg
+  [skip] 已存在: 葉-台灣牽牛.jpg
+  [skip] 已存在: 近-台灣牽牛.jpg
+  [ok]   葉-五齒薯蕗.jpg
+  [ok]   近-五齒薯蕗.jpg
+  [ok]   葉-穗花木藍.jpg
+  [ok]   近-穗花木藍.jpg
+  [ok]   葉-美麗崖豆藤.jpg
+  [ok]   近-美麗崖豆藤.jpg
+  [ok]   葉-台北秋海棠.jpg
+  [ok]   近-台北秋海棠.jpg
+  [ok]   葉-大武山桂花.jpg
+  [ok]   近-大武山桂花.jpg
+  [ok]   葉-台灣枇杷.jpg
+  [ok]   近-台灣枇杷.jpg
+--- 進度 500/508，成功 664，失敗 0 ---
+  [ok]   葉-小葉黃鱔藤.jpg
+  [ok]   近-小葉黃鱔藤.jpg
+  [ok]   葉-玉山龍膽.jpg
+  [ok]   近-玉山龍膽.jpg
+  [ok]   葉-台灣杉.jpg
+  [ok]   近-台灣杉.jpg
+  [ok]   葉-香杉.jpg
+  [ok]   近-香杉.jpg
+
+完成：下載成功 672，失敗 0，全株改名 0，已存在跳過 25
