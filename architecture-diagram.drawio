@@ -1,0 +1,289 @@
+<mxfile host="app.diagrams.net" modified="2026-06-17" version="21.0.0">
+  <diagram name="前後端架構（含驗證層）" id="arch-diagram">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="植徑 v.3 — 前後端架構（含驗證層）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="12" width="800" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- ===== 瀏覽器前端 ===== -->
+        <mxCell id="fe" value="瀏覽器前端（靜態 HTML / CSS / JS）" style="swimlane;startSize=36;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="65" width="380" height="790" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_html" value="&lt;b&gt;index.html + style.css&lt;/b&gt;&lt;br/&gt;Liquid Glass UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="45" width="270" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_app" value="&lt;b&gt;src/app.js&lt;/b&gt;&lt;br/&gt;主流程協調（步驟 1 → 7 觸發）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="125" width="270" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_upload" value="&lt;b&gt;src/upload.js&lt;/b&gt;&lt;br/&gt;圖片上傳 → POST /api/analyze-image" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="220" width="270" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_matching" value="&lt;b&gt;src/matching.js&lt;/b&gt;&lt;br/&gt;S_attr 評分引擎（純前端，零 API）&lt;br/&gt;類別 gate → 葉形 × 高度 × 展幅 × 觀賞 → ★" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="315" width="270" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_matrix" value="&lt;b&gt;src/matrix.js&lt;/b&gt;&lt;br/&gt;BOQ 動態計算（數量 / 盆型 / 間距）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="425" width="270" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_seasonal" value="&lt;b&gt;src/seasonal.js&lt;/b&gt;&lt;br/&gt;四季時間軸（春 / 夏 / 秋 / 冬）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="520" width="270" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fe_export" value="&lt;b&gt;src/export.js + SheetJS&lt;/b&gt;&lt;br/&gt;Excel 匯出（.xlsx）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fe">
+          <mxGeometry x="55" y="610" width="270" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ife1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fe_app" target="fe_upload" parent="fe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ife2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fe_app" target="fe_matching" parent="fe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ife3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fe_matching" target="fe_matrix" parent="fe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ife4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fe_matrix" target="fe_seasonal" parent="fe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ife5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fe_seasonal" target="fe_export" parent="fe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===== 靜態資料 ===== -->
+        <mxCell id="data" value="靜態資料（/data/）" style="swimlane;startSize=36;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="65" width="290" height="330" as="geometry" />
+        </mxCell>
+
+        <mxCell id="data_plants" value="&lt;b&gt;plants_enriched.json&lt;/b&gt;&lt;br/&gt;台灣原生植物 &lt;b&gt;500 種&lt;/b&gt;&lt;br/&gt;葉形 / 高度 / 展幅 / 花期 / 圖像" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="data">
+          <mxGeometry x="30" y="50" width="230" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="data_piet" value="&lt;b&gt;piet-principles.json&lt;/b&gt;&lt;br/&gt;設計原則 RAG 知識庫" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="data">
+          <mxGeometry x="30" y="150" width="230" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="data_demo" value="&lt;b&gt;demo-fallback.json&lt;/b&gt;&lt;br/&gt;AI 失敗備援示範資料" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="data">
+          <mxGeometry x="30" y="228" width="230" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- ===== Netlify Functions ===== -->
+        <mxCell id="fn" value="Netlify Functions（Serverless 後端）" style="swimlane;startSize=36;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="445" width="290" height="410" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fn_analyze" value="&lt;b&gt;analyze-image.js&lt;/b&gt;&lt;br/&gt;GPT-4o Vision 影像辨識&lt;br/&gt;→ identified[]（灌木/草本/地被）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="fn">
+          <mxGeometry x="30" y="48" width="230" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fn_match" value="&lt;b&gt;match-plants.js&lt;/b&gt;&lt;br/&gt;AI 語意配對（GPT-4o-mini）&lt;br/&gt;（輔助；前端已可獨立完成）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fn">
+          <mxGeometry x="30" y="145" width="230" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fn_rag" value="&lt;b&gt;query-rag.js / generate-rag.js&lt;/b&gt;&lt;br/&gt;RAG 語意檢索與生成" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fn">
+          <mxGeometry x="30" y="237" width="230" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fn_pdf" value="&lt;b&gt;ingest-pdf.js / ocr-page.js&lt;/b&gt;&lt;br/&gt;PDF 上傳 + OCR 知識庫建立" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="fn">
+          <mxGeometry x="30" y="313" width="230" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fn_other" value="get-upload-url.js &amp;nbsp;|&amp;nbsp; list-rag.js" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#f5f5f5;strokeColor=#aaaaaa;" vertex="1" parent="fn">
+          <mxGeometry x="30" y="383" width="230" height="38" as="geometry" />
+        </mxCell>
+
+        <!-- ===== 外部 API ===== -->
+        <mxCell id="api" value="外部 API" style="swimlane;startSize=36;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="445" width="300" height="260" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api_gpt4o" value="&lt;b&gt;OpenAI GPT-4o Vision&lt;/b&gt;&lt;br/&gt;影像辨識 / 植物層次分析&lt;br/&gt;model: gpt-4o" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="api">
+          <mxGeometry x="25" y="48" width="250" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api_mini" value="&lt;b&gt;OpenAI GPT-4o-mini&lt;/b&gt;&lt;br/&gt;AI 語意植物配對&lt;br/&gt;model: gpt-4o-mini" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="api">
+          <mxGeometry x="25" y="140" width="250" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===== 部署 ===== -->
+        <mxCell id="deploy" value="部署流程" style="swimlane;startSize=36;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="65" width="300" height="290" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dep_github" value="&lt;b&gt;GitHub（main 分支）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="deploy">
+          <mxGeometry x="30" y="50" width="240" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dep_netlify" value="&lt;b&gt;Netlify CI/CD&lt;/b&gt;&lt;br/&gt;push to main → 自動發布" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="deploy">
+          <mxGeometry x="30" y="118" width="240" height="58" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dep_env" value="環境變數：OPENAI_API_KEY&lt;br/&gt;（Netlify 後台 → Environment variables）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#f5f5f5;strokeColor=#aaaaaa;" vertex="1" parent="deploy">
+          <mxGeometry x="30" y="200" width="240" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dep_arr" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="dep_github" target="dep_netlify" parent="deploy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===== Cross-group Edges（系統主流程） ===== -->
+        <mxCell id="e_upload_fn" value="HTTP POST /api/analyze-image" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;labelBackgroundColor=none;" edge="1" source="fe_upload" target="fn_analyze" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fn_gpt4o" value="API 呼叫" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" edge="1" source="fn_analyze" target="api_gpt4o" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fn_mini" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="fn_match" target="api_mini" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_data_matching" value="fetch() 500 種" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;" edge="1" source="data_plants" target="fe_matching" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_piet_rag" value="RAG 知識庫" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;" edge="1" source="data_piet" target="fn_rag" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_demo" value="AI 失敗備援" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;strokeColor=#FF0000;fontColor=#FF0000;" edge="1" source="data_demo" target="fe_upload" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ================================================================ -->
+        <!-- ===== 驗證層 Swimlane ===== -->
+        <!-- ================================================================ -->
+        <mxCell id="val" value="驗證層（Validation Layer）— 開發 / 測試環境，非正式生產流程" style="swimlane;startSize=36;fillColor=#f5f5f5;strokeColor=#444444;fontStyle=1;fontSize=13;rounded=1;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="900" width="1440" height="420" as="geometry" />
+        </mxCell>
+
+        <!-- S_attr 評分架構 box -->
+        <mxCell id="val_sattr" value="&lt;b&gt;S_attr 評分架構&lt;/b&gt;&lt;br/&gt;&lt;i&gt;src/matching.js · scorePair()&lt;/i&gt;" style="swimlane;startSize=38;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;rounded=1;" vertex="1" parent="val">
+          <mxGeometry x="20" y="45" width="310" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="val_sa_cat" value="類別 gate（灌木/草本/地被）&lt;br/&gt;&lt;b&gt;50 分（硬性篩選，不同類直接排除）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffcccc;strokeColor=#b85450;" vertex="1" parent="val_sattr">
+          <mxGeometry x="15" y="48" width="280" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="val_sa_foliage" value="葉形 · Jaccard（27 項關鍵字詞庫）&lt;br/&gt;&lt;b&gt;× 30 分&lt;/b&gt;（最高，質地為恆久辨識特徵）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="val_sattr">
+          <mxGeometry x="15" y="112" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="val_sa_height" value="高度區間重疊（HEIGHT 欄位）&lt;br/&gt;&lt;b&gt;× 10 分&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="val_sattr">
+          <mxGeometry x="15" y="174" width="280" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="val_sa_spread" value="展幅區間重疊（SPREAD 欄位）&lt;br/&gt;&lt;b&gt;× 5 分&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="val_sattr">
+          <mxGeometry x="15" y="230" width="280" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="val_sa_ornament" value="觀賞期 Jaccard（FLW SEASON + STRUCT INT）&lt;br/&gt;&lt;b&gt;× 5 分&lt;/b&gt;（色彩刻意排除）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="val_sattr">
+          <mxGeometry x="15" y="284" width="280" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- S_llm box -->
+        <mxCell id="val_sllm" value="&lt;b&gt;S_llm（VLM-as-Judge）&lt;/b&gt;&lt;br/&gt;Claude Haiku 4.5 Vision&lt;br/&gt;&lt;br/&gt;對每組「參考圖裁切 × 候選植物照片」&lt;br/&gt;給出 0–100 分視覺相似度&lt;br/&gt;&lt;br/&gt;用途：作為 S_attr 排名的外部效標&lt;br/&gt;scripts/validate-similarity.mjs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="val">
+          <mxGeometry x="365" y="45" width="290" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Spearman compare box -->
+        <mxCell id="val_compare" value="&lt;b&gt;驗證比較指標&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Spearman ρ(S_attr, S_llm)&lt;br/&gt;　最低門檻：ρ ≥ 0.6（中度相關）&lt;br/&gt;　&lt;b&gt;目標值：ρ ≥ 0.7（強相關）&lt;/b&gt;&lt;br/&gt;　文獻基準：VLM-as-Judge ρ = 0.73–0.84&lt;br/&gt;&lt;br/&gt;Overlap@5（參考指標）&lt;br/&gt;S_llm 一致性 SD ≤ 15" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" vertex="1" parent="val">
+          <mxGeometry x="695" y="45" width="300" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Decision box -->
+        <mxCell id="val_decision" value="&lt;b&gt;驗證後決策&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;A：ρ ≥ 0.7 → 不動 WEIGHTS&lt;br/&gt;B：Phase 4 校準提升 →&lt;br/&gt;　更新 matching.js WEIGHTS&lt;br/&gt;C1：Role 有意義提升 →&lt;br/&gt;　雷達圖 5 軸 → 6 軸&lt;br/&gt;C2：Role 無提升 →&lt;br/&gt;　結構角色 badge（UI 標籤）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" vertex="1" parent="val">
+          <mxGeometry x="1040" y="45" width="275" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Role 探索 note -->
+        <mxCell id="val_role" value="&lt;b&gt;Role 維度（探索中）&lt;/b&gt;&lt;br/&gt;結構 / 主景 / 基質 / 填充&lt;br/&gt;Phase 5 A/B 測試後決定&lt;br/&gt;是否納入 scorePair()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="val">
+          <mxGeometry x="365" y="285" width="290" height="115" as="geometry" />
+        </mxCell>
+
+        <!-- Long-term note -->
+        <mxCell id="val_longterm" value="&lt;b&gt;中長期路線&lt;/b&gt;&lt;br/&gt;S_cnn（CLIP 影像嵌入）&lt;br/&gt;→ 資料庫 ≥ 200 種後引入&lt;br/&gt;→ 三方驗證：S_attr / S_cnn / S_llm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontSize=11;" vertex="1" parent="val">
+          <mxGeometry x="695" y="285" width="300" height="115" as="geometry" />
+        </mxCell>
+
+        <!-- Validation internal arrows -->
+        <mxCell id="val_e1" value="S_attr 分數" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" edge="1" source="val_sattr" target="val_compare" parent="val">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="val_e2" value="S_llm 分數" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" edge="1" source="val_sllm" target="val_compare" parent="val">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="val_e3" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="val_compare" target="val_decision" parent="val">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Cross arrows: production system → validation -->
+        <mxCell id="e_match_val" value="scorePair() 分數輸出" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;strokeColor=#b85450;" edge="1" source="fe_matching" target="val_sattr" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ================================================================ -->
+        <!-- ===== 實驗設計 Phase 1–6 ===== -->
+        <!-- ================================================================ -->
+        <mxCell id="ph_group" value="驗證實驗設計（Phase 1–6）— 在 VS Code 環境逐步執行" style="swimlane;startSize=36;fillColor=#f0f0f0;strokeColor=#444444;fontStyle=1;fontSize=13;rounded=1;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1360" width="1440" height="310" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 1 -->
+        <mxCell id="ph1" value="&lt;b&gt;Phase 1&lt;/b&gt;&lt;br/&gt;修正腳本 bug&lt;br/&gt;建立 S_attr-only 基準&lt;br/&gt;（15 組輸入植株）&lt;br/&gt;&lt;br/&gt;成本：$0&lt;br/&gt;時間：10–20 min" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="ph_group">
+          <mxGeometry x="20" y="50" width="190" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 2 -->
+        <mxCell id="ph2" value="&lt;b&gt;Phase 2 ★ 核心&lt;/b&gt;&lt;br/&gt;全量 S_attr vs S_llm&lt;br/&gt;≈100–110 組配對&lt;br/&gt;Spearman ρ（n=15）&lt;br/&gt;&lt;br/&gt;成本：$0.20–0.33&lt;br/&gt;時間：30–60 min" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="ph_group">
+          <mxGeometry x="232" y="50" width="190" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 3 -->
+        <mxCell id="ph3" value="&lt;b&gt;Phase 3&lt;/b&gt;&lt;br/&gt;S_llm 一致性&lt;br/&gt;5 組 × 前 3 名&lt;br/&gt;--repeat 3&lt;br/&gt;通過：SD ≤ 15&lt;br/&gt;&lt;br/&gt;成本：$0.11&lt;br/&gt;時間：10–20 min" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="ph_group">
+          <mxGeometry x="444" y="50" width="190" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 4 -->
+        <mxCell id="ph4" value="&lt;b&gt;Phase 4&lt;/b&gt;&lt;br/&gt;權重校準（NNLS）&lt;br/&gt;+ held-out 驗證&lt;br/&gt;校準集 10 組&lt;br/&gt;測試集 5 組&lt;br/&gt;&lt;br/&gt;成本：$0（重用）&lt;br/&gt;時間：20–30 min" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="ph_group">
+          <mxGeometry x="656" y="50" width="190" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 5 -->
+        <mxCell id="ph5" value="&lt;b&gt;Phase 5&lt;/b&gt;&lt;br/&gt;Role 維度 A/B&lt;br/&gt;scorePairWithRole()&lt;br/&gt;vs 原 scorePair()&lt;br/&gt;門檻：ρ ↑ ≥ 0.05&lt;br/&gt;&lt;br/&gt;成本：$0（重用）&lt;br/&gt;時間：30–45 min" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="ph_group">
+          <mxGeometry x="868" y="50" width="190" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 6 -->
+        <mxCell id="ph6" value="&lt;b&gt;Phase 6（選配）&lt;/b&gt;&lt;br/&gt;S_llm vs 人類專家&lt;br/&gt;12–15 組配對&lt;br/&gt;2–3 位景觀設計師&lt;br/&gt;驗證 S_llm 效標&lt;br/&gt;可信度&lt;br/&gt;&lt;br/&gt;成本：$0 API&lt;br/&gt;時間：視配合度" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontSize=11;" vertex="1" parent="ph_group">
+          <mxGeometry x="1080" y="50" width="200" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Phase sequence arrows -->
+        <mxCell id="ph_a1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ph1" target="ph2" parent="ph_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ph_a2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ph2" target="ph3" parent="ph_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ph_a3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ph3" target="ph4" parent="ph_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ph_a4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ph4" target="ph5" parent="ph_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ph_a5" style="edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" source="ph5" target="ph6" parent="ph_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connect val → ph_group -->
+        <mxCell id="e_val_ph" value="驗證結果觸發實驗" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;" edge="1" source="val_compare" target="ph2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
