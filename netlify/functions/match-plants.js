@@ -1,8 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 const OpenAI = require('openai');
+
 function readEnv() {
-  try { return Object.fromEntries(fs.readFileSync(path.join(__dirname,'../../.env'),'utf8').split('\n').filter(l=>l.includes('=')).map(l=>{const i=l.indexOf('=');return[l.slice(0,i).trim(),l.slice(i+1).trim()];})); } catch(e){return process.env;}
+  try {
+    return Object.fromEntries(
+      fs.readFileSync(path.join(__dirname, '../../.env'), 'utf8')
+        .split('\n').filter(l => l.includes('='))
+        .map(l => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; })
+    );
+  } catch (e) { return process.env; }
 }
 const ENV = readEnv();
 
@@ -20,29 +27,43 @@ const MATCHING_SYSTEM_PROMPT = `你是台灣中部原生植物景觀設計專家
 
 plants 格式（陣列）：
 {
-  "id": "<植物id>",
   "name_zh": "<中文名>",
   "name_latin": "<學名>",
-  "role": "<matrix|primary|scatter|filler>",
+  "role": "<Structure|Primary|Matrix|Filler|Scatter>",
   "ratio_pct": <整數，角色內的百分比>,
   "reason_zh": "<選用理由，1句話>",
-  "piet_analog": "<對應的Piet常用植物>"
+  "foliage": "<葉形描述>",
+  "height": "<高度範圍>"
 }
 
-矩陣配比原則：matrix 50% / primary 30% / scatter 10% / filler 10%
+矩陣配比原則：Matrix 50% / Primary 30% / Scatter 10% / Filler 10%
 全程使用繁體中文（台灣）。只輸出 JSON 陣列，不含 markdown 標記。`;
 
+function parseName(nameField) {
+  const parts = (nameField || '').split(' / ');
+  return {
+    name_zh: (parts[0] || '').trim(),
+    name_latin: (parts[1] || '').trim()
+  };
+}
+
 function filterPlantsByCondition(plants, siteConditions) {
+  if (!siteConditions || (!siteConditions.light && !siteConditions.moisture)) return plants;
+
   return plants.filter(plant => {
+    const lightField = (plant['LIGHT (光照)'] || '').toLowerCase();
+
     if (siteConditions.light) {
-      const lightMap = { '全日照': 'full', '半日照': 'partial', '半遮蔭': 'partial', '全遮蔭': 'shade' };
-      const reqLight = lightMap[siteConditions.light] || 'full';
-      if (!plant.site.light.includes(reqLight)) return false;
-    }
-    if (siteConditions.moisture) {
-      const moistureMap = { '乾燥': 'dry', '中等': 'mesic', '濕潤': 'wet' };
-      const reqMoisture = moistureMap[siteConditions.moisture] || 'mesic';
-      if (!plant.site.moisture.includes(reqMoisture)) return false;
+      const lightMap = {
+        '全日照': 'full sun',
+        '半日照': 'part',
+        '半遮蔭': 'part',
+        '全遮蔭': 'shade'
+      };
+      const reqLight = lightMap[siteConditions.light];
+      if (reqLight === 'full sun' && !lightField.includes('full sun')) return false;
+      if (reqLight === 'shade' && !lightField.includes('shade')) return false;
+      // 半日照/半遮蔭：接受 part shade 或 full sun 都可以
     }
     return true;
   });
@@ -56,7 +77,7 @@ exports.handler = async (event) => {
   try {
     const { designDNA, siteConditions, ragChunks } = JSON.parse(event.body);
 
-    const dataPath = path.join(__dirname, '../../data/plants-mock.json');
+    const dataPath = path.join(__dirname, '../../data/plants_enriched.json');
     const allPlants = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     const candidatePlants = filterPlantsByCondition(allPlants, siteConditions || {});
 
@@ -73,13 +94,23 @@ ${JSON.stringify(designDNA, null, 2)}
 Piet 設計原則與知識庫（RAG 語意檢索，共 ${(ragChunks || []).length} 筆）：
 ${(ragChunks || []).map(c => `- [${c.source_file || c.source_type || 'RAG'}] ${c.content}`).join('\n')}
 
-台灣中部原生植物候選池（${candidatePlants.length}種）：
-${JSON.stringify(candidatePlants.map(p => ({
-  id: p.id, name_zh: p.name_zh, name_latin: p.name_latin,
-  role: p.role, piet_analog: p.piet_analog, match_tags: p.match_tags,
-  height_cm: p.height_cm, winter_structure: p.winter_structure,
-  piet_similarity: p.piet_similarity
-})), null, 2)}
+台灣中部原生植物候選池（${candidatePlants.length} 種）：
+${JSON.stringify(candidatePlants.map(p => {
+  const { name_zh, name_latin } = parseName(p['Name (中文名/學名)']);
+  return {
+    name_zh,
+    name_latin,
+    category: p.category,
+    role: p['Role (角色)'],
+    foliage: p['FOLIAGE (葉形)'],
+    height: p['HEIGHT (高度)'],
+    spread: p['SPREAD (展幅)'],
+    flw_season: p['FLW SEASON (花期)'],
+    struct_int: p['STRUCT INT (結構期)'],
+    light: p['LIGHT (光照)'],
+    notes: p['NOTES (備註)']
+  };
+}), null, 2)}
 
 請生成 2-3 組台灣原生植物替代方案，輸出純 JSON 陣列。`;
 
