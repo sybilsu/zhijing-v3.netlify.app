@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" modified="2026-06-17" version="21.0.0">
+  <diagram name="Data Flow" id="data-flow-diagram">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="植徑 v.3 — 完整 Data Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=21;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="14" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ① Start -->
+        <mxCell id="s1" value="① 使用者開啟應用" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="70" width="240" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- ② Upload -->
+        <mxCell id="s2" value="② 上傳參考圖片（drag &amp; drop）&lt;br/&gt;輸入基地條件&lt;br/&gt;日照 / 水分 / 海拔 / 面積" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="163" width="330" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- ③ POST API -->
+        <mxCell id="s3" value="③ POST /api/analyze-image&lt;br/&gt;（Netlify Function → Node.js）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="288" width="330" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- ④ GPT-4o -->
+        <mxCell id="s4" value="④ GPT-4o Vision 辨識&lt;br/&gt;植物層次分析（灌木 / 草本 / 地被）&lt;br/&gt;信心度 / 葉形 / 高度 / 展幅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="403" width="330" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- Decision -->
+        <mxCell id="d1" value="AI 回應成功？" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="310" y="525" width="200" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- Fallback -->
+        <mxCell id="s_fb" value="載入 demo-fallback.json&lt;br/&gt;（備援示範資料）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="630" y="528" width="200" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- ⑤ identified[] -->
+        <mxCell id="s5" value="⑤ 回傳 identified[]&lt;br/&gt;各株：category / confidence&lt;br/&gt;foliage / height_estimate / spread_estimate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="648" width="330" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- plants_enriched.json DB symbol -->
+        <mxCell id="db_plants" value="plants_enriched.json&lt;br/&gt;&lt;b&gt;500 種台灣原生植物&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=16;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="758" width="195" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- ⑥ scoreSubstitutes -->
+        <mxCell id="s6" value="⑥ scoreSubstitutes()（matching.js）&lt;br/&gt;同類別篩選 → 四維評分&lt;br/&gt;葉形×30 ＋ 高度×10 ＋ 展幅×5 ＋ 觀賞期×5 ＋ 基底50" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="778" width="330" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ⑦ pool + weak_pool -->
+        <mxCell id="s7" value="⑦ pool（≥4★ 強配）&amp;nbsp;+&amp;nbsp; weak_pool（3★ 弱配）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="908" width="330" height="58" as="geometry" />
+        </mxCell>
+
+        <!-- ⑧ renderPools -->
+        <mxCell id="s8" value="⑧ renderPools()：顯示植物卡片&lt;br/&gt;使用者點「＋ 納入方案」&lt;br/&gt;（強配預設納入；弱配可手動展開加入）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1013" width="330" height="82" as="geometry" />
+        </mxCell>
+
+        <!-- ⑨ getSelectedList -->
+        <mxCell id="s9" value="⑨ getSelectedList()&lt;br/&gt;更新已選清單 → 觸發 BOQ / 季相重算" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1143" width="330" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- ⑩ BOQ -->
+        <mxCell id="s10" value="⑩ 動態 BOQ 計算（matrix.js）&lt;br/&gt;數量 / 盆型 / 間距&lt;br/&gt;matrix 50% · primary 30% · scatter 10% · filler 10%" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1256" width="330" height="78" as="geometry" />
+        </mxCell>
+
+        <!-- ⑪ Seasonal -->
+        <mxCell id="s11" value="⑪ 四季時間軸生成（seasonal.js）&lt;br/&gt;花期 / 結構期文字 → 春夏秋冬條狀圖" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1382" width="330" height="68" as="geometry" />
+        </mxCell>
+
+        <!-- ⑫ Export -->
+        <mxCell id="s12" value="⑫ Excel 匯出（export.js + SheetJS）&lt;br/&gt;植栽表 + BOQ + 評分細項" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1498" width="330" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- End -->
+        <mxCell id="s_end" value="完成：下載 .xlsx" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1612" width="240" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- ===== Arrows ===== -->
+        <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s1" target="s2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s2" target="s3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s3" target="s4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="d1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Decision: 否 → fallback -->
+        <mxCell id="a_no" value="否" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;fontColor=#b85450;fontStyle=1;" edge="1" source="d1" target="s_fb" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Decision: 是 → s5 -->
+        <mxCell id="a_yes" value="是" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;fontColor=#4a9e4a;fontStyle=1;" edge="1" source="d1" target="s5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- fallback → s5 (dashed) -->
+        <mxCell id="a_fb" value="備援路徑" style="edgeStyle=orthogonalEdgeStyle;dashed=1;fontSize=10;strokeColor=#b85450;fontColor=#b85450;" edge="1" source="s_fb" target="s5" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="640" />
+              <mxPoint x="730" y="688" />
+              <mxPoint x="575" y="688" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="a5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s5" target="s6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- db_plants → s6 (fetch) -->
+        <mxCell id="a_db" value="fetch()" style="edgeStyle=orthogonalEdgeStyle;dashed=1;fontSize=10;" edge="1" source="db_plants" target="s6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s6" target="s7" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s7" target="s8" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s8" target="s9" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s9" target="s10" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a10" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s10" target="s11" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a11" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s11" target="s12" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s12" target="s_end" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
