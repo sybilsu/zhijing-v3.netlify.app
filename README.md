@@ -8,7 +8,7 @@
 ## 技術
 - 前端：靜態 HTML / CSS / 原生 JS（多步驟流程）
 - 後端：Netlify Functions（影像辨識用 OpenAI GPT-4o Vision）
-- 植物比對：純程式碼評分（同類別 → 葉形 / 高度 / 展幅 / 花果季 → 分數 → 星等），資料庫 `data/plants_enriched.json`
+- 植物比對：純程式碼評分（同類別 → 葉形 / 高度 / 展幅 / 花果季 → 分數 → 星等），資料庫 `data/plants_enriched.json`（500 種台灣中部原生植物；圖像 Demo 可用，持續補齊中）
 - 防當機：AI 逾時/失敗時自動切換示範資料，流程仍可走完
 
 > 本 repo 由本地自動同步（每數分鐘），內容即為最新版本。

@@ -39,8 +39,8 @@ AI-assisted naturalistic planting design tool based on Piet Oudolf's principles,
 │       ├── match-plants.js     # Qwen2.5-VL + RAG matching
 │       └── generate-rag.js     # RAG query handler
 ├── data/
-│   ├── plants-mock.json        # MVP: 20 mock plant entries
-│   ├── plants-full.json        # Full: 1000 Taiwan central natives
+│   ├── plants_enriched.json    # 500 Taiwan central native plants (authoritative, from xlsx)
+│   ├── plants-mock.json        # Legacy 20-entry mock (kept for fallback reference)
 │   ├── piet-principles.json    # RAG chunks from "Planting" book
 │   └── piet-species.json       # Piet's commonly used plant database
 ├── public/
@@ -255,9 +255,9 @@ Output: SVG or HTML timeline bar per plant showing active / dormant / flowering 
 
 ---
 
-## MVP Testing (No Full Database Required)
+## Database Status
 
-The app is testable with `plants-mock.json` (20 species). All AI calls are real (GPT-4o + Qwen), only the plant lookup pool is limited. Replace `plants-mock.json` with `plants-full.json` (1000 species) when database is ready — no code change needed.
+The app runs against `plants_enriched.json` (500 species). All AI calls are real (GPT-4o). Plant images (全株 / 近景 / 葉) are partially available — Demo works as-is; full image set is being sourced. Source data: `taiwan native/2026_植物屬性表_500種.xlsx`. Target 1000 species in a future update.
 
 To run locally:
 ```bash
