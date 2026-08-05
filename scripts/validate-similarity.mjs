@@ -49,6 +49,7 @@ const CFG = {
   model: arg('model', null),
   seed: +arg('seed', 20260804),
   temperature: +arg('temperature', 1),
+  minPool: +arg('min-pool', 5),   // 類別候選池下限；池小於 topk 時自動送審全池
   dryRun: !!arg('dry-run', false),
 };
 CFG.model = CFG.model || (CFG.provider === 'openai' ? 'gpt-4o-mini' : 'claude-haiku-4-5');
@@ -122,7 +123,19 @@ function photoOf(name) {
   }
   return null;
 }
-const WITH_PHOTO = DB.filter(d => photoOf(zhName(d)));
+/**
+ * 影像稽核黑名單（2026-08-04 逐張目視稽核結果）
+ * 這些物種的本地照片主體錯誤或不可用於形態比對，會直接污染 S_llm 效標。
+ * 以 --exclude-bad 啟用排除；未來補上正確照片後即可自名單移除。
+ */
+const BAD_PHOTOS = {
+  '青葙': '主體為鳥類（Lilac-breasted Roller），非目標植物',
+  '綬草': '古典植物版畫，非攝影照片',
+  '絡石': '蛾（Autographa gamma）占畫面顯著面積，原始檔名即為蛾的學名',
+  '田代氏石斑木': '住宅街景中的修剪球形灌木，含房屋／柵欄／垃圾桶等人工物',
+};
+const EXCLUDE_BAD = !!arg('exclude-bad', false);
+const WITH_PHOTO = DB.filter(d => photoOf(zhName(d)) && !(EXCLUDE_BAD && BAD_PHOTOS[zhName(d)]));
 
 /** 把資料庫一筆轉成「模擬 GPT-4o 辨識輸出」的 input 物件（leave-one-out 設計） */
 function asInput(d) {
@@ -147,7 +160,7 @@ function pickInputs(n) {
   const byCat = {};
   for (const d of WITH_PHOTO) (byCat[normCategory(d)] ||= []).push(d);
   const cats = Object.entries(byCat)
-    .filter(([, arr]) => arr.length >= CFG.topk + 1)
+    .filter(([, arr]) => arr.length >= CFG.minPool + 1)
     .sort((a, b) => b[1].length - a[1].length);
   const picked = [];
   let i = 0;
@@ -321,7 +334,8 @@ function overlapAtK(a, b, k = 5) {
 (async () => {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const inputs = pickInputs(CFG.inputs);
-  console.log(`資料庫 ${DB.length} 種／有照片 ${WITH_PHOTO.length} 種`);
+  console.log(`資料庫 ${DB.length} 種／可用照片 ${WITH_PHOTO.length} 種`);
+  if (EXCLUDE_BAD) console.log(`已排除稽核不合格影像 ${Object.keys(BAD_PHOTOS).length} 種：${Object.keys(BAD_PHOTOS).join('、')}`);
   console.log(`抽樣 ${inputs.length} 組輸入植株｜每組送審 ${CFG.topk} 筆｜重複 ${CFG.repeat} 次｜provider=${CFG.provider} model=${CFG.model}`);
 
   const runs = [];
