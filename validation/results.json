@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-04T15:39:42.588Z",
+  "generated_at": "2026-08-09T09:17:01.917Z",
   "config": {
-    "inputs": 10,
-    "topk": 8,
-    "repeat": 1,
-    "maxCalls": 10,
+    "inputs": 5,
+    "topk": 3,
+    "repeat": 3,
+    "maxCalls": 200,
     "provider": "anthropic",
     "model": "claude-haiku-4-5-20251001",
     "seed": 20260804,
@@ -20,24 +20,19 @@
     "ornament": 5
   },
   "summary": {
-    "n_inputs": 10,
-    "n_pairs": 75,
-    "api_calls": 8,
+    "n_inputs": 5,
+    "n_pairs": 15,
+    "api_calls": 30,
     "rho_per_input": [
-      -0.127,
-      -0.397,
-      0.346,
-      -0.673,
-      -0.025,
-      0.019,
-      0.242,
-      0.111,
-      -0.218,
-      0.427
+      0.5,
+      0,
+      0.5,
+      -0.866,
+      0.5
     ],
-    "rho_mean": -0.03,
-    "overlap5_mean": 3.6,
-    "sd_mean": null,
+    "rho_mean": 0.127,
+    "overlap5_mean": 3,
+    "sd_mean": 3.43,
     "pass_rho_min": false,
     "pass_rho_target": false
   },
@@ -59,12 +54,12 @@
         ],
         "ornament": "Fall-Winter (10-1月) Fall (白色頭狀花序)"
       },
-      "n_pool": 9,
+      "n_pool": 10,
       "candidates": [
         {
           "name": "桃金孃",
           "latin": "Rhodomyrtus tomentosa (Aiton) Hassk.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/桃金孃_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/桃金孃_habit.jpg",
           "s_attr": 72.9,
           "stars": 3,
           "breakdown": {
@@ -75,16 +70,18 @@
             "ornament": 0
           },
           "s_llm_runs": [
+            32,
+            32,
             32
           ],
-          "reason": "圖A為細緻繁密的複合花序，質地輕盈通透；圖B為簡單對生葉片，結構粗放緻密。兩者整體質感差異大。",
+          "reason": "圖A為球形聚傘花序、葉片較大較粗糙；圖B為細小白花、葉片細緻密集，整體質感與結構差異大，不適合直接替換。",
           "s_llm": 32,
           "s_llm_sd": 0
         },
         {
           "name": "台灣糯米條",
           "latin": "Abelia chinensis var. ionandra (Hayata) Masam.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣糯米條_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/台灣糯米條_habit.jpg",
           "s_attr": 72,
           "stars": 3,
           "breakdown": {
@@ -95,16 +92,18 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            72
+            45,
+            52,
+            45
           ],
-          "reason": "兩者皆為繖房花序的細緻灌木，葉形與質地相近。圖B花序更飽滿密集，株型略顯更蓬鬆粗放，視覺量體稍大，但整體設計意圖可保留。",
-          "s_llm": 72,
-          "s_llm_sd": 0
+          "reason": "圖A為緊密球形聚傘花序，圖B為開散的筒狀花序結構。花序形式差異大，植株質地從緻密轉為疏散，視覺張力改變明顯。",
+          "s_llm": 47.3,
+          "s_llm_sd": 4.04
         },
         {
           "name": "水社野牡丹",
           "latin": "Melastoma kudoi Sasaki",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/水社野牡丹.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/水社野牡丹_habit.jpg",
           "s_attr": 70.7,
           "stars": 3,
           "breakdown": {
@@ -115,159 +114,73 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細緻蕾狀密集花序，圖B為單朵四瓣花；A為細葉灌木質感，B為草本挺立形態；株型、花序結構、整體質地差異大。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "杜虹花",
-          "latin": "Callicarpa formosana Rolfe",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
-          "s_attr": 67,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 2,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細緻蕾狀花序、羽狀複葉、通透輕盈質感；圖B為粗放葉片、疏散花序、整體質感粗糙緻密差異大。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "野牡丹",
-          "latin": "Melastoma candidum D.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/野牡丹_habit.jpg",
-          "s_attr": 64.9,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 12.9,
-            "height": 2,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
+            32,
+            28,
             28
           ],
-          "reason": "圖A為細緻繁花的聚傘花序，開放通透的線性質感；圖B為單果實特寫，植株結構、花果形式、視覺量體差異極大，不適合直接替換。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "燈稱花",
-          "latin": "Ilex asprella (Hook. & Arn.) Champ. ex Benth.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/燈稱花_habit.jpg",
-          "s_attr": 63.3,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 11.3,
-            "height": 2,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A細緻繁密的複傘房花序vs圖B簡疏的葉片結構；整體質地、株形輪廓差異大，設計意圖明顯改變",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣馬醉木",
-          "latin": "Pieris taiwanensis Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣馬醉木_habit.jpg",
-          "s_attr": 60,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 6.7,
-            "height": 3.3,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者皆為細緻花序，但A的複繖房花序更蓬鬆開放，B的總狀花序較為直立緊密；葉形差異明顯，整體質地略有位移。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山素英",
-          "latin": "Jasminum sinense Hemsl.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山素英.jpg",
-          "s_attr": 55.2,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 3.8,
-            "height": 1.4,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "圖A為複傘房花序、葉片羽狀分裂、質地細緻通透；圖B為繖房花序、葉片完整卵形、花朵星形散開。花序結構與葉形差異大，整體質感位移明顯。",
-          "s_llm": 45,
-          "s_llm_sd": 0
+          "reason": "圖A為緊密球形花序、質地細膩；圖B為單生蘭花形態、質地纖細。植株結構、花序類型、視覺量體差異大。",
+          "s_llm": 29.3,
+          "s_llm_sd": 2.31
         }
       ],
-      "rho": -0.127,
+      "rho": 0.5,
       "overlap5": 3,
       "rank_attr": [
         "桃金孃",
         "台灣糯米條",
-        "水社野牡丹",
-        "杜虹花",
-        "野牡丹",
-        "燈稱花",
-        "台灣馬醉木",
-        "山素英"
+        "水社野牡丹"
       ],
       "rank_llm": [
         "台灣糯米條",
-        "台灣馬醉木",
-        "山素英",
         "桃金孃",
-        "水社野牡丹",
-        "杜虹花",
-        "燈稱花",
-        "野牡丹"
+        "水社野牡丹"
       ]
     },
     {
       "input": {
-        "id": "田代氏黃芩",
-        "name_zh": "田代氏黃芩",
-        "name_latin": "Scutellaria tashiroi Hayata",
+        "id": "台灣金絲桃",
+        "name_zh": "台灣金絲桃",
+        "name_latin": "Hypericum formosanum Maxim.",
         "category": "草本",
-        "foliage": "對生卵形，被毛，葉脈下凹",
+        "foliage": "對生橢圓卵形，具透明腺點",
         "height_estimate_m": [
-          0.2,
-          0.4
+          0.3,
+          1
         ],
         "spread_estimate_m": [
-          0.2,
-          0.4
+          0.3,
+          0.8
         ],
-        "ornament": "Spring-Summer (4-7月) Spring-Summer (藍紫色唇形花)"
+        "ornament": "Summer (6-8月) Summer (黃色5瓣花)"
       },
-      "n_pool": 7,
+      "n_pool": 8,
       "candidates": [
         {
-          "name": "台灣金絲桃",
-          "latin": "Hypericum formosanum Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣金絲桃.jpg",
+          "name": "毛胡枝子",
+          "latin": "Lespedeza tomentosa (Thunb.) Siebold ex Maxim.",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/毛胡枝子_habit.jpg",
+          "s_attr": 70.1,
+          "stars": 3,
+          "breakdown": {
+            "category": 50,
+            "foliage": 10,
+            "height": 7.1,
+            "spread": 3,
+            "ornament": 0
+          },
+          "s_llm_runs": [
+            28,
+            32,
+            32
+          ],
+          "reason": "圖A為蔓性灌木，葉片密集厚實，花序簇生；圖B為直立草本，葉片細長稀疏，花序穗狀。植株形態、質地、量體差異大。",
+          "s_llm": 30.7,
+          "s_llm_sd": 2.31
+        },
+        {
+          "name": "田代氏黃芩",
+          "latin": "Scutellaria tashiroi Hayata",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/田代氏黃芩_habit.jpg",
           "s_attr": 67.1,
           "stars": 3,
           "breakdown": {
@@ -278,152 +191,48 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為細緻直立草本，葉序對生排列稀疏；圖B為蕨類蔓性植物，羽狀複葉密集下垂。形態、質地、輪廓差異根本，不適合互換。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "鈴木草",
-          "latin": "Suzukia shikikunensis Kudo",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/鈴木草.jpg",
-          "s_attr": 56.7,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 3.3,
-            "spread": 3.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "葉序與株型差異大。A為對生小葉、莖直立疏朗；B為輪生毛葉、株型低矮密集。花序形態相似但整體質地位移明顯。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "紫苞舌蘭",
-          "latin": "Spathoglottis plicata Blume",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/紫苞舌蘭_habit.jpg",
-          "s_attr": 52.9,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 1.3,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者皆為纖細莖葉的小花植物，整體質地通透。惟圖B花序下垂且豆莢狀果實明顯，圖A則為直立花簇，株型輪廓與視覺量體差異中等。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "毛胡枝子",
-          "latin": "Lespedeza tomentosa (Thunb.) Siebold ex Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/毛胡枝子.jpg",
-          "s_attr": 51.3,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 1.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "葉序與葉形差異大。A為對生小葉，B為羽狀複葉。A花序集中下垂，B為分散小花簇。整體質地與株型差異明顯。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "阿里山油菊",
-          "latin": "Dendranthema arisanense (Hayata) Y.Ling & C.Shih",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/阿里山油菊.jpg",
-          "s_attr": 51.3,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 1.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
+            32,
+            32,
             32
           ],
-          "reason": "圖A為細緻垂直線性穗狀花序，圖B為粗放球形花團；葉序與植株形態差異大，視覺質感差異明顯。",
+          "reason": "圖A為羽狀複葉蔓性植物，細緻通透；圖B為直立草本，葉片簡單，質地粗放。整體形態、質感、株型差異極大，不適合替代。",
           "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "截葉胡枝子",
-          "latin": "Lespedeza cuneata (Dum.Cours.) G.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/截葉胡枝子_habit.jpg",
-          "s_attr": 50.8,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 0.8,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者皆為直立細長株型，葉序相似。圖B花序更密集緊湊，圖A更通透纖細，整體質感略有位移但替換可行。",
-          "s_llm": 68,
           "s_llm_sd": 0
         },
         {
           "name": "山月桃",
           "latin": "Alpinia intermedia Gagnep.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
-          "s_attr": 50,
-          "stars": 2,
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
+          "s_attr": 65,
+          "stars": 3,
           "breakdown": {
             "category": 50,
-            "foliage": 0,
+            "foliage": 15,
             "height": 0,
             "spread": 0,
             "ornament": 0
           },
           "s_llm_runs": [
-            45
+            32,
+            32,
+            28
           ],
-          "reason": "葉序與葉形差異大；A為細密小葉對生，B為寬大葉片；花序形式相異，A為筒狀密集，B為總狀疏散；整體質地與視覺量體明顯不同。",
-          "s_llm": 45,
-          "s_llm_sd": 0
+          "reason": "圖A為蔓性灌木，葉序密集細緻、質地通透；圖B為挺立草本，葉形寬大劍形、株型垂直緊湊，整體質感與空間佔據方式差異大。",
+          "s_llm": 30.7,
+          "s_llm_sd": 2.31
         }
       ],
-      "rho": -0.397,
+      "rho": 0,
       "overlap5": 3,
       "rank_attr": [
-        "台灣金絲桃",
-        "鈴木草",
-        "紫苞舌蘭",
         "毛胡枝子",
-        "阿里山油菊",
-        "截葉胡枝子",
+        "田代氏黃芩",
         "山月桃"
       ],
       "rank_llm": [
-        "紫苞舌蘭",
-        "截葉胡枝子",
-        "鈴木草",
+        "田代氏黃芩",
         "毛胡枝子",
-        "山月桃",
-        "阿里山油菊",
-        "台灣金絲桃"
+        "山月桃"
       ]
     },
     {
@@ -443,12 +252,34 @@
         ],
         "ornament": "Spring (3-4月) Year-round"
       },
-      "n_pool": 9,
+      "n_pool": 10,
       "candidates": [
+        {
+          "name": "田代氏石斑木",
+          "latin": "Rhaphiolepis indica var. tashiroi Hayata",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/田代氏石斑木_habit.jpg",
+          "s_attr": 90,
+          "stars": 5,
+          "breakdown": {
+            "category": 50,
+            "foliage": 30,
+            "height": 5,
+            "spread": 5,
+            "ornament": 0
+          },
+          "s_llm_runs": [
+            45,
+            45,
+            32
+          ],
+          "reason": "圖A為直立高大灌木，花序穗狀下垂；圖B為低矮匍匐灌木，花序傘形密集。株型、質地、視覺量體差異大。",
+          "s_llm": 40.7,
+          "s_llm_sd": 7.51
+        },
         {
           "name": "燈稱花",
           "latin": "Ilex asprella (Hook. & Arn.) Champ. ex Benth.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/燈稱花_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/燈稱花_habit.jpg",
           "s_attr": 80,
           "stars": 4,
           "breakdown": {
@@ -459,16 +290,18 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            45
+            45,
+            45,
+            68
           ],
-          "reason": "圖A為細緻懸垂花序，圖B為闊葉灌木，葉形葉序、花序形式、整體質地差異大，視覺輪廓與透光性差異明顯",
-          "s_llm": 45,
-          "s_llm_sd": 0
+          "reason": "兩者均為細緻羽狀花序植物，整體質感相近。但圖A葉片更寬闊厚實，株幅更展開；圖B葉片更細小，質地更輕盈纖細，視覺量體略小。",
+          "s_llm": 52.7,
+          "s_llm_sd": 13.28
         },
         {
           "name": "杜虹花",
           "latin": "Callicarpa formosana Rolfe",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
           "s_attr": 70,
           "stars": 3,
           "breakdown": {
@@ -479,154 +312,26 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            35
-          ],
-          "reason": "圖A為細緻懸垂花序，花密集繁繁。圖B為散生小花，株型直立粗放。整體質地與形態差異大，設計意圖改變明顯。",
-          "s_llm": 35,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "桃金孃",
-          "latin": "Rhodomyrtus tomentosa (Aiton) Hassk.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/桃金孃_habit.jpg",
-          "s_attr": 69.6,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 11.3,
-            "height": 3.3,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細緻繁花序列，通透輕盈；圖B為簡潔葉序植物，質地粗放緻密。整體視覺量體與花果形式差異過大。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "野牡丹",
-          "latin": "Melastoma candidum D.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/野牡丹_habit.jpg",
-          "s_attr": 68.6,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 5,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細緻繁花的總狀花序，圖B為單果實。花序形態、株高量體、視覺層次差異過大，不適合直接替換。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣糯米條",
-          "latin": "Abelia chinensis var. ionandra (Hayata) Masam.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣糯米條_habit.jpg",
-          "s_attr": 66.9,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 6.7,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "葉形差異大（細長vs闊葉），花序結構不同（下垂鈴狀vs密集球狀），整體質地從細緻通透變粗放緻密，視覺量體差異明顯。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "高士拂澤蘭",
-          "latin": "Eupatorium tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/高士拂澤蘭.jpg",
-          "s_attr": 60,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 6.7,
-            "height": 3.3,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者皆為細緻通透的花序植物，但A的下垂鐘形花序vs B的球狀密集花序，整體質感與動態感有明顯差異。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "水社野牡丹",
-          "latin": "Melastoma kudoi Sasaki",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/水社野牡丹.jpg",
-          "s_attr": 58.6,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
+            32,
+            32,
             28
           ],
-          "reason": "圖A為細緻通透的圓錐花序，圖B為單一立挺花朵。株型、葉序、質地差異大，視覺量體不符。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "黃荊",
-          "latin": "Vitex negundo L.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/黃荊_habit.jpg",
-          "s_attr": 58.6,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細緻花序的小灌木，圖B為粗放草本灌叢，葉形、質地、株型結構差異大，視覺感受不符",
-          "s_llm": 32,
-          "s_llm_sd": 0
+          "reason": "圖A為密集小花序的灌木，質地細緻蓬鬆；圖B為散生複葉喬木，葉形葉序差異大，整體質感與結構差異顯著。",
+          "s_llm": 30.7,
+          "s_llm_sd": 2.31
         }
       ],
-      "rho": 0.346,
-      "overlap5": 4,
+      "rho": 0.5,
+      "overlap5": 3,
       "rank_attr": [
+        "田代氏石斑木",
         "燈稱花",
-        "杜虹花",
-        "桃金孃",
-        "野牡丹",
-        "台灣糯米條",
-        "高士拂澤蘭",
-        "水社野牡丹",
-        "黃荊"
+        "杜虹花"
       ],
       "rank_llm": [
-        "高士拂澤蘭",
         "燈稱花",
-        "台灣糯米條",
-        "杜虹花",
-        "桃金孃",
-        "野牡丹",
-        "黃荊",
-        "水社野牡丹"
+        "田代氏石斑木",
+        "杜虹花"
       ]
     },
     {
@@ -646,12 +351,12 @@
         ],
         "ornament": "Summer-Fall (8-10月) Fall (莢果宿存)"
       },
-      "n_pool": 7,
+      "n_pool": 8,
       "candidates": [
         {
           "name": "台灣金絲桃",
           "latin": "Hypericum formosanum Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣金絲桃.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/台灣金絲桃_habit.jpg",
           "s_attr": 70.1,
           "stars": 3,
           "breakdown": {
@@ -662,16 +367,18 @@
             "ornament": 0
           },
           "s_llm_runs": [
+            32,
+            28,
             28
           ],
-          "reason": "圖A為細緻小葉灌木，花序密集纖細；圖B為蕨類大羽葉，質地粗放通透。植株形態、葉序、視覺質感差異巨大，不適合直接替代。",
-          "s_llm": 28,
-          "s_llm_sd": 0
+          "reason": "圖A為直立草本花序排列緊密，圖B為蔓性灌木葉片大型複葉，植株形態、質地、結構完全不同，不適合互換。",
+          "s_llm": 29.3,
+          "s_llm_sd": 2.31
         },
         {
           "name": "截葉胡枝子",
           "latin": "Lespedeza cuneata (Dum.Cours.) G.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/截葉胡枝子_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/截葉胡枝子_habit.jpg",
           "s_attr": 68.8,
           "stars": 3,
           "breakdown": {
@@ -682,16 +389,18 @@
             "ornament": 2.5
           },
           "s_llm_runs": [
-            45
+            32,
+            32,
+            28
           ],
-          "reason": "圖A為分枝密集的蔓性灌木，花序散生；圖B為直立草本，花序集中穗狀。整體形態與質地差異大，替換會明顯改變畫面空間感。",
-          "s_llm": 45,
-          "s_llm_sd": 0
+          "reason": "圖A為細緻直立穗狀花序的草本，圖B為粗放蓬鬆草叢；葉形葉序差異大，質地與株型完全不同，視覺感受相差甚遠",
+          "s_llm": 30.7,
+          "s_llm_sd": 2.31
         },
         {
           "name": "山月桃",
           "latin": "Alpinia intermedia Gagnep.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
           "s_attr": 65,
           "stars": 3,
           "breakdown": {
@@ -702,111 +411,25 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            45
+            32,
+            32,
+            28
           ],
-          "reason": "花序形態差異大。A為聚傘花序密集分布，B為總狀花序縱向排列。整體質地從細碎通透變為豎立緊湊，視覺節奏改變明顯。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "阿里山油菊",
-          "latin": "Dendranthema arisanense (Hayata) Y.Ling & C.Shih",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/阿里山油菊.jpg",
-          "s_attr": 65,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 10,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            42
-          ],
-          "reason": "圖A細緻蕾絲質地，圖B為粗放菊科形態。葉序葉形差異大，株型輪廓及花序組織完全不同，視覺質感位移明顯。",
-          "s_llm": 42,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "紫苞舌蘭",
-          "latin": "Spathoglottis plicata Blume",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/紫苞舌蘭_habit.jpg",
-          "s_attr": 60.5,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 7.1,
-            "spread": 3.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            52
-          ],
-          "reason": "兩者皆為小花草本，但A為密集繖房花序、葉細小，B為疏散總狀花序、豆科葉片較大，整體質地與株型差異明顯。",
-          "s_llm": 52,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "鈴木草",
-          "latin": "Suzukia shikikunensis Kudo",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/鈴木草.jpg",
-          "s_attr": 56.8,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 4.3,
-            "height": 0,
-            "spread": 2.5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者均為細緻型草本，花序集合成簇。A為白花疏散穗狀，B為紫花密集頭狀，整體質地相近但花序形態與株型密度有明顯差異。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "田代氏黃芩",
-          "latin": "Scutellaria tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/田代氏黃芩.jpg",
-          "s_attr": 51.3,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 1.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "兩者均為小葉草本，但圖A質地細緻蔓生，圖B挺立單莖；花序形式差異大，整體株型輪廓不同。",
-          "s_llm": 45,
-          "s_llm_sd": 0
+          "reason": "圖A為細緻穗狀花序，通透輕盈；圖B為寬大掌狀葉片，質地粗放。植株形態、葉序、視覺量體差異大，不適合互換。",
+          "s_llm": 30.7,
+          "s_llm_sd": 2.31
         }
       ],
-      "rho": -0.673,
+      "rho": -0.866,
       "overlap5": 3,
       "rank_attr": [
         "台灣金絲桃",
         "截葉胡枝子",
-        "山月桃",
-        "阿里山油菊",
-        "紫苞舌蘭",
-        "鈴木草",
-        "田代氏黃芩"
+        "山月桃"
       ],
       "rank_llm": [
-        "鈴木草",
-        "紫苞舌蘭",
         "截葉胡枝子",
         "山月桃",
-        "田代氏黃芩",
-        "阿里山油菊",
         "台灣金絲桃"
       ]
     },
@@ -827,12 +450,34 @@
         ],
         "ornament": "Winter-Spring (1-3月) Fall-Winter (黑色核果)"
       },
-      "n_pool": 9,
+      "n_pool": 10,
       "candidates": [
+        {
+          "name": "田代氏石斑木",
+          "latin": "Rhaphiolepis indica var. tashiroi Hayata",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/田代氏石斑木_habit.jpg",
+          "s_attr": 85,
+          "stars": 4,
+          "breakdown": {
+            "category": 50,
+            "foliage": 20,
+            "height": 10,
+            "spread": 5,
+            "ornament": 0
+          },
+          "s_llm_runs": [
+            72,
+            68,
+            68
+          ],
+          "reason": "葉形相近但葉序不同，A為互生細小葉，B為對生較大葉。B整體質地更緻密粗放，A更通透細緻。花序形式相似但視覺量體差異明顯。",
+          "s_llm": 69.3,
+          "s_llm_sd": 2.31
+        },
         {
           "name": "杜虹花",
           "latin": "Callicarpa formosana Rolfe",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
           "s_attr": 83,
           "stars": 4,
           "breakdown": {
@@ -843,16 +488,18 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            45
+            32,
+            32,
+            32
           ],
-          "reason": "圖A枝條細長下垂，葉序稀疏通透；圖B株型直立緊湊，葉序密集粗放。整體質感與空間感差異明顯。",
-          "s_llm": 45,
+          "reason": "圖A細緻羽毛狀小葉，通透輕盈；圖B為大型複葉，質地粗放厚重。植株形態與視覺量體差異大，不適合直接替換。",
+          "s_llm": 32,
           "s_llm_sd": 0
         },
         {
           "name": "台灣馬醉木",
           "latin": "Pieris taiwanensis Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣馬醉木_habit.jpg",
+          "photo": "/sessions/zen-happy-clarke/mnt/___zhijing-v3/public/photos/台灣馬醉木_habit.jpg",
           "s_attr": 80,
           "stars": 4,
           "breakdown": {
@@ -863,1103 +510,26 @@
             "ornament": 0
           },
           "s_llm_runs": [
-            68
+            42,
+            32,
+            48
           ],
-          "reason": "葉序與質地相近，花序形態略異。圖B葉片更狹長挺立，花序更密集下垂，整體質感偏精緻，與圖A的開放感有所位移。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "野牡丹",
-          "latin": "Melastoma candidum D.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/野牡丹_habit.jpg",
-          "s_attr": 80,
-          "stars": 4,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 10,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為灌木型植株，葉序密集通透；圖B為草本蔓性植物，果實集中展示。株型、質地、展幅差異大，整體視覺量體不匹配。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "桃金孃",
-          "latin": "Rhodomyrtus tomentosa (Aiton) Hassk.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/桃金孃_habit.jpg",
-          "s_attr": 72.9,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 11.3,
-            "height": 6.7,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "葉形相近皆為橢圓形，葉序相同。圖B葉片較小且密集，整體質地更細緻通透，與圖A的中等粗放感有差異。株型輪廓相近但視覺量體略小。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣糯米條",
-          "latin": "Abelia chinensis var. ionandra (Hayata) Masam.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣糯米條_habit.jpg",
-          "s_attr": 70.7,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 4,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A細緻羽狀複葉、疏散輪廓；圖B粗闊單葉、密集球形花序。葉形葉序差異大，整體質地與形態差異明顯，替換會顯著改變畫面。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山素英",
-          "latin": "Jasminum sinense Hemsl.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山素英.jpg",
-          "s_attr": 66,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 4.3,
-            "height": 6.7,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            42
-          ],
-          "reason": "葉形差異大（羽狀複葉vs單葉），質地從細緻蕨狀變為粗放，株形輪廓變化明顯，視覺量體不符",
-          "s_llm": 42,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "水社野牡丹",
-          "latin": "Melastoma kudoi Sasaki",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/水社野牡丹.jpg",
-          "s_attr": 65,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為灌木型細葉植物，整體質地通透輕盈；圖B為草本低矮植物，株型矮小緊湊，葉序與結構差異大，視覺量體與空間佔比完全不同。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "高士拂澤蘭",
-          "latin": "Eupatorium tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/高士拂澤蘭.jpg",
-          "s_attr": 63.3,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 11.3,
-            "height": 2,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "葉形葉序相似，質地細膩度接近。惟參考株枝條較長垂感，候選株花序更密集突出，整體輪廓與量體感有位移。",
-          "s_llm": 68,
-          "s_llm_sd": 0
+          "reason": "葉形差異大：A為細小羽狀葉、質地細緻通透；B為寬闊披針形葉、質感粗放緻密。株型與視覺量體明顯不同，替換會改變畫面氣質。",
+          "s_llm": 40.7,
+          "s_llm_sd": 8.08
         }
       ],
-      "rho": -0.025,
+      "rho": 0.5,
       "overlap5": 3,
       "rank_attr": [
+        "田代氏石斑木",
         "杜虹花",
-        "台灣馬醉木",
-        "野牡丹",
-        "桃金孃",
-        "台灣糯米條",
-        "山素英",
-        "水社野牡丹",
-        "高士拂澤蘭"
+        "台灣馬醉木"
       ],
       "rank_llm": [
+        "田代氏石斑木",
         "台灣馬醉木",
-        "桃金孃",
-        "高士拂澤蘭",
-        "杜虹花",
-        "山素英",
-        "台灣糯米條",
-        "水社野牡丹",
-        "野牡丹"
-      ]
-    },
-    {
-      "input": {
-        "id": "台灣金絲桃",
-        "name_zh": "台灣金絲桃",
-        "name_latin": "Hypericum formosanum Maxim.",
-        "category": "草本",
-        "foliage": "對生橢圓卵形，具透明腺點",
-        "height_estimate_m": [
-          0.3,
-          1
-        ],
-        "spread_estimate_m": [
-          0.3,
-          0.8
-        ],
-        "ornament": "Summer (6-8月) Summer (黃色5瓣花)"
-      },
-      "n_pool": 7,
-      "candidates": [
-        {
-          "name": "毛胡枝子",
-          "latin": "Lespedeza tomentosa (Thunb.) Siebold ex Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/毛胡枝子.jpg",
-          "s_attr": 70.1,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 10,
-            "height": 7.1,
-            "spread": 3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為蕨類羽狀細緻葉序，圖B為小葉灌木草本，葉形葉序差異大，質地粗放度差異明顯，整體視覺量體與輪廓不相容。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "田代氏黃芩",
-          "latin": "Scutellaria tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/田代氏黃芩.jpg",
-          "s_attr": 67.1,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 1.3,
-            "spread": 0.8,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            35
-          ],
-          "reason": "圖A為蕨類植物，葉片細緻羽狀；圖B為草本花卉，葉序對生簡單葉。兩者葉形、質地、株型差異大，替換會顯著改變畫面視覺。",
-          "s_llm": 35,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山月桃",
-          "latin": "Alpinia intermedia Gagnep.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
-          "s_attr": 65,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為羽狀複葉蕨類，細緻通透；圖B為闊葉草本花卉，質地粗放緻密。植株形態、葉序、整體質感差異極大。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "紫苞舌蘭",
-          "latin": "Spathoglottis plicata Blume",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/紫苞舌蘭_habit.jpg",
-          "s_attr": 62,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 10,
-            "spread": 2,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為蕨類植物，羽狀複葉、細緻透光；圖B為豆科草本，單葉對生、花序明顯。葉形、質地、株型差異巨大，不適合視覺替代。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "阿里山油菊",
-          "latin": "Dendranthema arisanense (Hayata) Y.Ling & C.Shih",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/阿里山油菊.jpg",
-          "s_attr": 60.1,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 7.1,
-            "spread": 3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為羽狀複葉蕨類，細緻通透；圖B為菊科小花植物，質地緻密粗放。葉序、株形、質感差異大，不適合直接替換。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "截葉胡枝子",
-          "latin": "Lespedeza cuneata (Dum.Cours.) G.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/截葉胡枝子_habit.jpg",
-          "s_attr": 57.9,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 2.9,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為蕨類、葉序羽狀、質地細緻通透、呈瀑布狀展幅。圖B為直立草本、穗狀花序、株型緊湊豎立，整體形態差異大。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "鈴木草",
-          "latin": "Suzukia shikikunensis Kudo",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/鈴木草.jpg",
-          "s_attr": 56,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 4.3,
-            "height": 0,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            35
-          ],
-          "reason": "圖A蕨類羽狀複葉、下垂柔軟、質地通透；圖B草本小花、直立緊密、整體形態差異大",
-          "s_llm": 35,
-          "s_llm_sd": 0
-        }
-      ],
-      "rho": 0.019,
-      "overlap5": 4,
-      "rank_attr": [
-        "毛胡枝子",
-        "田代氏黃芩",
-        "山月桃",
-        "紫苞舌蘭",
-        "阿里山油菊",
-        "截葉胡枝子",
-        "鈴木草"
-      ],
-      "rank_llm": [
-        "田代氏黃芩",
-        "鈴木草",
-        "毛胡枝子",
-        "阿里山油菊",
-        "山月桃",
-        "紫苞舌蘭",
-        "截葉胡枝子"
-      ]
-    },
-    {
-      "input": {
-        "id": "黃荊",
-        "name_zh": "黃荊",
-        "name_latin": "Vitex negundo L.",
-        "category": "灌木",
-        "foliage": "掌狀複葉，小葉3-5枚披針形",
-        "height_estimate_m": [
-          2,
-          5
-        ],
-        "spread_estimate_m": [
-          2,
-          4
-        ],
-        "ornament": "Summer (7-9月) Summer (花穗)"
-      },
-      "n_pool": 9,
-      "candidates": [
-        {
-          "name": "燈稱花",
-          "latin": "Ilex asprella (Hook. & Arn.) Champ. ex Benth.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/燈稱花_habit.jpg",
-          "s_attr": 61.1,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 2.5,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            42
-          ],
-          "reason": "圖A為細緻通透的灌木叢生型；圖B為闊葉喬木形態。葉序、質地、株型差異大，替換會顯著改變畫面空間感。",
-          "s_llm": 42,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山素英",
-          "latin": "Jasminum sinense Hemsl.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山素英.jpg",
-          "s_attr": 60,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 5,
-            "height": 5,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為細緻通透的灌木叢，圖B為精緻小型花卉植物。株高、質地、視覺量體差異極大，無法維持自然主義種植的畫面層次感。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣馬醉木",
-          "latin": "Pieris taiwanensis Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣馬醉木_habit.jpg",
-          "s_attr": 58.6,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細緻通透的灌木，圖B為密集小花的草本花序。株型、質地、輪廓差異大，視覺量體與空間表現明顯不同。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "桃金孃",
-          "latin": "Rhodomyrtus tomentosa (Aiton) Hassk.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/桃金孃_habit.jpg",
-          "s_attr": 55,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 5,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            35
-          ],
-          "reason": "圖A為細緻羽狀葉的灌木，通透感強。圖B為厚實對生葉，質地粗放緻密，整體視覺質感差異大。",
-          "s_llm": 35,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "杜虹花",
-          "latin": "Callicarpa formosana Rolfe",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
-          "s_attr": 52.5,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 2.5,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "都是細葉灌木，整體質地通透相似。但圖B葉片較大，株形更緊湊，與圖A的蓬鬆感略有差異。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "野牡丹",
-          "latin": "Melastoma candidum D.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/野牡丹_habit.jpg",
-          "s_attr": 52.5,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 2.5,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為直立灌木,葉細緻通透;圖B為低矮灌木,果實質感完全不同,株型與視覺量體差異大,不適合替代",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣糯米條",
-          "latin": "Abelia chinensis var. ionandra (Hayata) Masam.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣糯米條_habit.jpg",
-          "s_attr": 50,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為細葉灌木，質地輕盈通透；圖B為肉質闊葉植物，密集厚重。株型、葉序、整體質感差異大，替換會明顯改變畫面氛圍。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "水社野牡丹",
-          "latin": "Melastoma kudoi Sasaki",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/水社野牡丹.jpg",
-          "s_attr": 50,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "A為細緻通透的灌木叢，B為低矮草本花卉。株高、量體、質地差異大，無法互換。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        }
-      ],
-      "rho": 0.242,
-      "overlap5": 4,
-      "rank_attr": [
-        "燈稱花",
-        "山素英",
-        "台灣馬醉木",
-        "桃金孃",
-        "杜虹花",
-        "野牡丹",
-        "台灣糯米條",
-        "水社野牡丹"
-      ],
-      "rank_llm": [
-        "杜虹花",
-        "燈稱花",
-        "桃金孃",
-        "台灣馬醉木",
-        "台灣糯米條",
-        "山素英",
-        "野牡丹",
-        "水社野牡丹"
-      ]
-    },
-    {
-      "input": {
-        "id": "阿里山油菊",
-        "name_zh": "阿里山油菊",
-        "name_latin": "Dendranthema arisanense (Hayata) Y.Ling & C.Shih",
-        "category": "草本",
-        "foliage": "羽狀深裂，互生，灰綠色",
-        "height_estimate_m": [
-          0.5,
-          1
-        ],
-        "spread_estimate_m": [
-          0.3,
-          0.6
-        ],
-        "ornament": "Fall-Winter (10-12月) Fall (黃色頭狀花序)"
-      },
-      "n_pool": 7,
-      "candidates": [
-        {
-          "name": "毛胡枝子",
-          "latin": "Lespedeza tomentosa (Thunb.) Siebold ex Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/毛胡枝子.jpg",
-          "s_attr": 65,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 10,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            72
-          ],
-          "reason": "葉形與株形差異明顯。A為細緻羽毛狀複葉、緊密球形；B為線性簡單葉、開放輪廓。花序形態相近但整體質地感降低。",
-          "s_llm": 72,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "紫苞舌蘭",
-          "latin": "Spathoglottis plicata Blume",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/紫苞舌蘭_habit.jpg",
-          "s_attr": 60.5,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 7.1,
-            "spread": 3.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "葉形差異大（羽裂vs線形複葉），株型結構不同（叢生vs懸垂豆荚），質地對比明顯，整體視覺量體與輪廓差異過大",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣金絲桃",
-          "latin": "Hypericum formosanum Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣金絲桃.jpg",
-          "s_attr": 60.1,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 7.1,
-            "spread": 3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為細緻花序的灌木，圖B為蕨類羽狀葉的地被植物，植株形態、質地、株型差異極大，視覺效果完全不同。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "截葉胡枝子",
-          "latin": "Lespedeza cuneata (Dum.Cours.) G.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/截葉胡枝子_habit.jpg",
-          "s_attr": 56.3,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 3.3,
-            "spread": 3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為菊科多花小型繁密花序，圖B為十字花科穗狀單花序。花序形式、植株質地、視覺量體差異大，替換會明顯改變畫面氛圍。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "鈴木草",
-          "latin": "Suzukia shikikunensis Kudo",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/鈴木草.jpg",
-          "s_attr": 52.5,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 2.5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            52
-          ],
-          "reason": "花序形式差異大：A為密集平頂花群，B為穗狀散花。葉形相似但B質地更細緻。株型輪廓差異明顯，視覺量體不同。",
-          "s_llm": 52,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "田代氏黃芩",
-          "latin": "Scutellaria tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/田代氏黃芩.jpg",
-          "s_attr": 51.3,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 1.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "圖A為叢生多花型，花序密集繁盛；圖B為疏散穗狀花序。葉形葉序差異大，整體量體與視覺節奏明顯不同，替換會改變設計質感。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山月桃",
-          "latin": "Alpinia intermedia Gagnep.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
-          "s_attr": 50,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "A為菊科多頭小花集合花序，質地細緻繁茂；B為唇形科穗狀花序，花型獨立豎立。株型、花序形態、視覺質感差異大。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        }
-      ],
-      "rho": 0.111,
-      "overlap5": 4,
-      "rank_attr": [
-        "毛胡枝子",
-        "紫苞舌蘭",
-        "台灣金絲桃",
-        "截葉胡枝子",
-        "鈴木草",
-        "田代氏黃芩",
-        "山月桃"
-      ],
-      "rank_llm": [
-        "毛胡枝子",
-        "鈴木草",
-        "田代氏黃芩",
-        "紫苞舌蘭",
-        "截葉胡枝子",
-        "山月桃",
-        "台灣金絲桃"
-      ]
-    },
-    {
-      "input": {
-        "id": "野牡丹",
-        "name_zh": "野牡丹",
-        "name_latin": "Melastoma candidum D.Don",
-        "category": "灌木",
-        "foliage": "橢圓卵形，5-7脈，硬毛，紙質",
-        "height_estimate_m": [
-          1,
-          3
-        ],
-        "spread_estimate_m": [
-          1,
-          2
-        ],
-        "ornament": "Summer (6-8月) Summer-Fall (大型紫紅花/果)"
-      },
-      "n_pool": 9,
-      "candidates": [
-        {
-          "name": "杜虹花",
-          "latin": "Callicarpa formosana Rolfe",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/杜虹花_habit.jpg",
-          "s_attr": 87.5,
-          "stars": 4,
-          "breakdown": {
-            "category": 50,
-            "foliage": 22.5,
-            "height": 10,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為灌木漿果類，果序緊密球形；圖B為草本植物，莖葉細長挺立，整體形態、質地、株型差異大，不適合互換。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "燈稱花",
-          "latin": "Ilex asprella (Hook. & Arn.) Champ. ex Benth.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/燈稱花_habit.jpg",
-          "s_attr": 80,
-          "stars": 4,
-          "breakdown": {
-            "category": 50,
-            "foliage": 15,
-            "height": 10,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為灌木漿果類，果實飽滿集中；圖B為喬木型植株，葉序疏散通透性強，植株量體、質地、生長習性差異大，不適合直接替換。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "桃金孃",
-          "latin": "Rhodomyrtus tomentosa (Aiton) Hassk.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/桃金孃_habit.jpg",
-          "s_attr": 74.5,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 12.9,
-            "height": 6.7,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為灌木漿果類，果實飽滿聚集；圖B為細葉灌木，葉序密集但質地輕盈。植株形態、葉形、果實表現差異大，替換會明顯改變視覺質感。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣糯米條",
-          "latin": "Abelia chinensis var. ionandra (Hayata) Masam.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣糯米條_habit.jpg",
-          "s_attr": 73.7,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 18,
-            "height": 4,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "圖A為灌木漿果類，果序緊湊飽滿；圖B為草本花卉，花序散生輕盈。植株質地、株型、視覺量體差異大。",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣馬醉木",
-          "latin": "Pieris taiwanensis Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣馬醉木_habit.jpg",
-          "s_attr": 68.6,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 8.6,
-            "height": 5,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            42
-          ],
-          "reason": "圖A為灌木漿果，果序緊密；圖B為草本花序，開放繁花。植株形態、質地、量體差異大，視覺意圖改變明顯。",
-          "s_llm": 42,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "水社野牡丹",
-          "latin": "Melastoma kudoi Sasaki",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/水社野牡丹.jpg",
-          "s_attr": 68,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 18,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            32
-          ],
-          "reason": "參考植株為灌木型、細密果序結構；候選植株為草本直立花卉，植型、質地、視覺量體差異大",
-          "s_llm": 32,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山素英",
-          "latin": "Jasminum sinense Hemsl.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山素英.jpg",
-          "s_attr": 66.7,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 5,
-            "height": 6.7,
-            "spread": 5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為莓果類灌木，果實飽滿聚集；圖B為細緻花序植物。株型、質地、視覺量體差異大，不適合直接替換。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "高士拂澤蘭",
-          "latin": "Eupatorium tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/高士拂澤蘭.jpg",
-          "s_attr": 64.9,
-          "stars": 3,
-          "breakdown": {
-            "category": 50,
-            "foliage": 12.9,
-            "height": 2,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "圖A為灌木型果實序列，圖B為草本花序集團。株型、質地、視覺量體差異大，替換會明顯改變畫面結構。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        }
-      ],
-      "rho": -0.218,
-      "overlap5": 4,
-      "rank_attr": [
-        "杜虹花",
-        "燈稱花",
-        "桃金孃",
-        "台灣糯米條",
-        "台灣馬醉木",
-        "水社野牡丹",
-        "山素英",
-        "高士拂澤蘭"
-      ],
-      "rank_llm": [
-        "高士拂澤蘭",
-        "台灣馬醉木",
-        "杜虹花",
-        "燈稱花",
-        "桃金孃",
-        "台灣糯米條",
-        "水社野牡丹",
-        "山素英"
-      ]
-    },
-    {
-      "input": {
-        "id": "鈴木草",
-        "name_zh": "鈴木草",
-        "name_latin": "Suzukia shikikunensis Kudo",
-        "category": "草本",
-        "foliage": "圓腎形至心形，葉緣鋸齒，被白色長毛",
-        "height_estimate_m": [
-          0.1,
-          0.3
-        ],
-        "spread_estimate_m": [
-          0.2,
-          0.5
-        ],
-        "ornament": "Spring-Summer (4-7月) Spring-Summer (輪繖花序)"
-      },
-      "n_pool": 7,
-      "candidates": [
-        {
-          "name": "毛胡枝子",
-          "latin": "Lespedeza tomentosa (Thunb.) Siebold ex Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/毛胡枝子.jpg",
-          "s_attr": 56.8,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 4.3,
-            "height": 0,
-            "spread": 2.5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            72
-          ],
-          "reason": "兩者均為細緻小花序植物，葉形相近，質地通透。但圖B花序更密集緊湊，圖A花朵更立體飽滿，整體量體感略有差異。",
-          "s_llm": 72,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "田代氏黃芩",
-          "latin": "Scutellaria tashiroi Hayata",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/田代氏黃芩.jpg",
-          "s_attr": 56.7,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 3.3,
-            "spread": 3.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者皆為草本花卉，花序形式相似，但圖B葉序對生更規則、株型更直立纖細，圖A質地更蓬鬆繁茂，視覺量體差異明顯",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "台灣金絲桃",
-          "latin": "Hypericum formosanum Maxim.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/台灣金絲桃.jpg",
-          "s_attr": 56,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 4.3,
-            "height": 0,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            28
-          ],
-          "reason": "圖A為細緻直立花序的草本植物，圖B為蕨類蔓性植物，葉形、質地、株型、高度差異巨大，視覺效果完全不同。",
-          "s_llm": 28,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "山月桃",
-          "latin": "Alpinia intermedia Gagnep.",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/山月桃_habit.jpg",
-          "s_attr": 56,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 6,
-            "height": 0,
-            "spread": 0,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者均為直立花序的草本植物，花形態相似。但B的葉片更寬大，植株質地更粗放，A的細緻蓬鬆感減弱，整體視覺量體差異明顯。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "紫苞舌蘭",
-          "latin": "Spathoglottis plicata Blume",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/紫苞舌蘭_habit.jpg",
-          "s_attr": 53.3,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 3.3,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "兩者均為細緻草本，花序紫色。A為聚傘花序密集感強，B為總狀花序較疏散；株型輪廓略異，替換可行但整體通透感有變化。",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "阿里山油菊",
-          "latin": "Dendranthema arisanense (Hayata) Y.Ling & C.Shih",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/阿里山油菊.jpg",
-          "s_attr": 52.5,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 2.5,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            45
-          ],
-          "reason": "圖A為唇形花序、細緻多毛質地、直立叢狀；圖B為菊科盤狀花序、葉片裂葉、蓬鬆球形。花序形態與植株質地差異大。",
-          "s_llm": 45,
-          "s_llm_sd": 0
-        },
-        {
-          "name": "截葉胡枝子",
-          "latin": "Lespedeza cuneata (Dum.Cours.) G.Don",
-          "photo": "/sessions/vigilant-gifted-dijkstra/mnt/___zhijing-v3/public/photos/截葉胡枝子_habit.jpg",
-          "s_attr": 51.7,
-          "stars": 2,
-          "breakdown": {
-            "category": 50,
-            "foliage": 0,
-            "height": 0,
-            "spread": 1.7,
-            "ornament": 0
-          },
-          "s_llm_runs": [
-            68
-          ],
-          "reason": "均為直立穗狀花序，葉形相近，但A株質地細緻蓬鬆，B株緻密挺立，視覺量體與空間感有差異",
-          "s_llm": 68,
-          "s_llm_sd": 0
-        }
-      ],
-      "rho": 0.427,
-      "overlap5": 4,
-      "rank_attr": [
-        "毛胡枝子",
-        "田代氏黃芩",
-        "台灣金絲桃",
-        "山月桃",
-        "紫苞舌蘭",
-        "阿里山油菊",
-        "截葉胡枝子"
-      ],
-      "rank_llm": [
-        "毛胡枝子",
-        "田代氏黃芩",
-        "山月桃",
-        "紫苞舌蘭",
-        "截葉胡枝子",
-        "阿里山油菊",
-        "台灣金絲桃"
+        "杜虹花"
       ]
     }
   ]

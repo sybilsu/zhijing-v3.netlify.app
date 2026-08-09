@@ -129,10 +129,8 @@ function photoOf(name) {
  * 以 --exclude-bad 啟用排除；未來補上正確照片後即可自名單移除。
  */
 const BAD_PHOTOS = {
-  '青葙': '主體為鳥類（Lilac-breasted Roller），非目標植物',
-  '綬草': '古典植物版畫，非攝影照片',
-  '絡石': '蛾（Autographa gamma）占畫面顯著面積，原始檔名即為蛾的學名',
-  '田代氏石斑木': '住宅街景中的修剪球形灌木，含房屋／柵欄／垃圾桶等人工物',
+  // 2026-08-09 影像語料重建：青葙、綬草、絡石、田代氏石斑木已補上合格照片，
+  // 全部 25 種完成 _habit／_close／_leaf 槽位換補（詳見 8月送件/換補相片 與 PHOTO SPEC 稽核）。
 };
 const EXCLUDE_BAD = !!arg('exclude-bad', false);
 const WITH_PHOTO = DB.filter(d => photoOf(zhName(d)) && !(EXCLUDE_BAD && BAD_PHOTOS[zhName(d)]));
